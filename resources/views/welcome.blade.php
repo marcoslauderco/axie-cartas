@@ -34,8 +34,7 @@
         <x-card class="bird" type="tail" card="cloud" energy="1" description="Esse ataque mira no Inimigo mais a frente não convocado" />
         <x-card class="beast" type="mouth" card="confident" energy="0" description="Embaralhe um {!!$void!!} na pilha de descarte do oponente. {!!$banish!!}." />
         <x-card class="beast" type="tail" card="cottontail" energy="0" description="Cura qualquer aliado. Ganha 1 energia. {!!$banish!!}." />
-
-        <x-card class="beast" type="back" card="croc" energy="1" description="Mire em qualquer aliado. No próximo turno depois do ataque do alvo, apica {!!$bleed!!} no atacante por 4 turnos" />
+        <x-card class="reptile" type="back" card="croc" energy="1" description="Mire em qualquer aliado. No próximo turno depois do ataque do alvo, apica {!!$bleed!!} no atacante por 4 turnos" />
         <x-card class="bird" type="horn" card="cuckoo" energy="1" description="Mire em qualquer aliado. Remova {!!$sleep!!}. O proximo ataque do alvo nesse turno da 50 mais de DANO." />
         <x-card class="bird" type="back" card="cupid" energy="1" description="Apica {!!$bleed!!} por 4 turnos" />
         <x-card class="bug" type="mouth" card="cutebunny" energy="1" description="Aplica {!!$fear!!} por 4 turnos" />
