@@ -24,6 +24,10 @@ Route::get('/', function () {
     $innate = "<span class='debuff tooltip'>Innate<span class='tooltiptext'>O que o Innate faz</span></span>";
     $daze = "<span class='debuff tooltip'>Daze<span class='tooltiptext'>Atordoa</span></span>";
     $initial = "<span class='debuff tooltip'>Initial<span class='tooltiptext'>Inicial: Primeira carta jogada.</span></span>";
+    $damage_boost = "<span class='debuff tooltip'>Damage Boost<span class='tooltiptext'>Aumento de dano.</span></span>";
+    $void = "<span class='debuff tooltip'>Void<span class='tooltiptext'>Vazio</span></span>";
+    $sleep = "<span class='debuff tooltip'>Sleep<span class='tooltiptext'>Dormir</span></span>";
+    $bleed = "<span class='debuff tooltip'>Bleed<span class='tooltiptext'>Sangrar</span></span>";
 
     return view('welcome', compact(
         'taunt',
@@ -34,6 +38,10 @@ Route::get('/', function () {
         'weak',
         'innate',
         'daze',
-        'initial'
+        'initial',
+        'damage_boost',
+        'void',
+        'sleep',
+        'bleed'
     ));
 });
