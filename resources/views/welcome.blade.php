@@ -155,49 +155,69 @@
         <x-card class="aqua" type="horn" card="oranda" energy="2"
             description="{!! $dispel !!} até 2 buffs no alvo." />
 
-        <x-card class="" type="" card="parasite" energy="" description="" />
-        <x-card class="" type="" card="peacemaker" energy="" description="" />
-        <x-card class="" type="" card="perch" energy="" description="" />
-        <x-card class="" type="" card="pigeonpost" energy="" description="" />
-        <x-card class="" type="" card="pinder" energy="" description="" />
-        <x-card class="" type="" card="pirhana" energy="" description="" />
-        <x-card class="" type="" card="pliers" energy="" description="" />
-        <x-card class="" type="" card="pocky" energy="" description="" />
-        <x-card class="" type="" card="postfight" energy="" description="" />
-        <x-card class="" type="" card="potato leaf" energy="" description="" />
-        <x-card class="" type="" card="pumpkin" energy="" description="" />
-        <x-card class="" type="" card="pupae" energy="" description="" />
+        <x-card class="bug" type="horn" card="parasite" energy="1"
+            description="Olhe para as 2 cartas do topo da pilha de compras do seu oponente " />
+        <x-card class="bird" type="mouth" card="peacemaker" energy="1" description="" />
+        <x-card class="aqua" type="back" card="perch" energy="2" description="" />
+        <x-card class="bird" type="back" card="pigeonpost" energy="1" description="" />
+        <x-card class="bug" type="mouth" card="pinder" energy="1" description="" />
+        <x-card class="aqua" type="mouth" card="pirhana" energy="1" description="" />
+        <x-card class="bug" type="horn" card="pliers" energy="1" description="" />
+        <x-card class="beast" type="horn" card="pocky" energy="1" description="" />
+        <x-card class="bird" type="tail" card="postfight" energy="1" description="" />
+        <x-card class="plant" type="tail" card="potato leaf" energy="1" description="" />
+        <x-card class="plant" type="back" card="pumpkin" energy="1" description="" />
+        <x-card class="bug" type="tail" card="pupae" energy="1" description="" />
 
-        <x-card class="" type="" card="ranchu" energy="" description="" />
-        <x-card class="" type="" card="raven" energy="" description="" />
-        <x-card class="" type="" card="razorbite" energy="" description="" />
-        <x-card class="" type="" card="redear" energy="" description="" />
-        <x-card class="" type="" card="rice" energy="" description="" />
-        <x-card class="" type="" card="riskybeast" energy="" description="" />
-        <x-card class="" type="" card="riskyfish" energy="" description="" />
-        <x-card class="" type="" card="ronin" energy="" description="" />
-        <x-card class="" type="" card="rosebud" energy="" description="" />
+        <x-card class="aqua" type="tail" card="ranchu" energy="2" description="" />
+        <x-card class="bird" type="back" card="raven" energy="1" description="" />
+        <x-card class="reptile" type="mouth" card="razorbite" energy="1" description="" />
+        <x-card class="reptile" type="back" card="redear" energy="1" description="" />
+        <x-card class="beast" type="tail" card="rice" energy="1" description="" />
+        <x-card class="beast" type="back" card="riskybeast" energy="1" description="" />
+        <x-card class="aqua" type="mouth" card="riskyfish" energy="1" description="" />
+        <x-card class="beast" type="back" card="ronin" energy="1" description="" />
+        <x-card class="plant" type="horn" card="rosebud" energy="1" description="" />
 
-        <x-card class="" type="" card="sandal" energy="" description="" />
-        <x-card class="" type="" card="scalyspear" energy="" description="" />
-        <x-card class="" type="" card="scalyspoon" energy="" description="" />
-        <x-card class="" type="" card="scarab" energy="" description="" />
-        <x-card class="" type="" card="serious" energy="" description="" />
-        <x-card class="" type="" card="shiba" energy="" description="" />
-        <x-card class="" type="" card="shiitake" energy="" description="" />
-        <x-card class="" type="" card="shoalstar" energy="" description="" />
-        <x-card class="" type="" card="shrmp" energy="" description="" />
-        <x-card class="" type="" card="silencewhisper" energy="" description="" />
-        <x-card class="" type="" card="snailshell" energy="" description="" />
-        <x-card class="" type="" card="snakejar" energy="" description="" />
-        <x-card class="" type="" card="spikywing" energy="" description="" />
-        <x-card class="" type="" card="sponge" energy="" description="" />
-        <x-card class="" type="" card="squareteeth" energy="" description="" />
-        <x-card class="" type="" card="strawberryshortcake" energy="" description="" />
-        <x-card class="" type="" card="swallow" energy="" description="" />
+        <x-card class="bug" type="back" card="sandal" energy="2" description="" />
+        <x-card class="reptile" type="horn" card="scalyspear" energy="1" description="" />
+        <x-card class="reptile" type="horn" card="scalyspoon" energy="1" description="" />
+        <x-card class="bug" type="back" card="scarab" energy="1" description="" />
+        <x-card class="plant" type="mouth" card="serious" energy="1" description="" />
+        <x-card class="beast" type="tail" card="shiba" energy="2" description="" />
+        <x-card class="plant" type="back" card="shiitake" energy="1" description="" />
+        <x-card class="aqua" type="horn" card="shoalstar" energy="1" description="" />
+        <x-card class="aqua" type="tail" card="shrmp" energy="1" description="" />
+        <x-card class="plant" type="mouth" card="silencewhisper" energy="1" description="" />
+        <x-card class="bug" type="back" card="snailshell" energy="1" description="" />
+        <x-card class="reptile" type="tail" card="snakejar" energy="1" description="" />
+        <x-card class="bug" type="back" card="spikywing" energy="1" description="" />
+        <x-card class="agua" type="back" card="sponge" energy="1" description="" />
+        <x-card class="bug" type="mouth" card="squareteeth" energy="0" description="" />
+        <x-card class="plant" type="horn" card="strawberryshortcake" energy="2" description="" />
+        <x-card class="bird" type="tail" card="swallow" energy="1" description="" />
 
 
-        {{-- <x-card class="" type="" card="" energy="" description="" /> --}}
+        <x-card class="aqua" type="tail" card="tadpole" energy="1" description="" />
+        <x-card class="aqua" type="horn" card="tealshell" energy="1" description="" />
+        <x-card class="bird" type="tail" card="thelastone" energy="1" description="" />
+        <x-card class="bug" type="tail" card="thornycaterpillar" energy="2" description="" />
+        <x-card class="beast" type="back" card="timber" energy="1" description="" />
+        <x-card class="reptile" type="mouth" card="tinyturtle" energy="1" description="" />
+        <x-card class="reptile" type="tail" card="tinyudino" energy="1" description="" />
+        <x-card class="reptile" type="mouth" card="toothlessbite" energy="1" description="" />
+        <x-card class="bird" type="back" card="trifeather" energy="1" description="" />
+        <x-card class="reptile" type="back" card="trispikes" energy="1" description="" />
+        <x-card class="bird" type="horn" card="trump" energy="1" description="" />
+        <x-card class="plant" type="back" card="turnip" energy="1" description="" />
+        <x-card class="bug" type="tail" card="twintail" energy="1" description="" />
+        <x-card class="reptile" type="horn" card="unko" energy="1" description="" />
+        <x-card class="reptile" type="tail" card="wallgecko" energy="1" description="" />
+        <x-card class="plant" type="back" card="wateringcan" energy="1" description="" />
+        <x-card class="plant" type="horn" card="watermelon" energy="1" description="" />
+        <x-card class="bird" type="horn" card="winghorn" energy="1" description="" />
+        <x-card class="plant" type="tail" card="yam" energy="0" description="" />
+        <x-card class="plant" type="mouth" card="zigzag" energy="1" description="" />
     </div>
 </body>
 
