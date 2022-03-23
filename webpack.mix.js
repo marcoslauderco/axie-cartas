@@ -13,4 +13,5 @@ const mix = require('laravel-mix');
 
 mix.js('resources/js/app.js', 'public/js')
     // .copy('resources/card-img', 'public/images')
+    // .copy('resources/card-ears', 'public/images')
     .sass('resources/css/app.scss', 'public/css').version();

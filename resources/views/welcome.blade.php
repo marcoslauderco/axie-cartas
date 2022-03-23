@@ -266,6 +266,44 @@
             description="Ataca e aplica 2 {!! $poison !!} a todos os inimigos." />
         <x-card class="plant" type="mouth" card="zigzag" energy="1"
             description="Cure a Vida igual a 50% do dano não bloqueado." />
+
+        {{-- ORELHA --}}
+        <x-card class="" type="ear" card="beetlspike" energy="" description="" />
+        <x-card class="" type="ear" card="belieber" energy="" description="" />
+        <x-card class="" type="ear" card="bubblemaker" energy="" description="" />
+        <x-card class="" type="ear" card="clover" energy="" description="" />
+        <x-card class="" type="ear" card="curly" energy="" description="" />
+        <x-card class="" type="ear" card="curvedspine" energy="" description="" />
+        <x-card class="" type="ear" card="earbreathing" energy="" description="" />
+        <x-card class="" type="ear" card="earlybird" energy="" description="" />
+        <x-card class="" type="ear" card="earwing" energy="" description="" />
+        <x-card class="" type="ear" card="friezard" energy="" description="" />
+        <x-card class="" type="ear" card="gill" energy="" description="" />
+        <x-card class="" type="ear" card="hollow" energy="" description="" />
+        <x-card class="" type="ear" card="inkling" energy="" description="" />
+        <x-card class="" type="ear" card="innocentlamb" energy="" description="" />
+        <x-card class="" type="ear" card="larva" energy="" description="" />
+        <x-card class="" type="ear" card="leafbugear" energy="" description="" />
+        <x-card class="" type="ear" card="leafy" energy="" description="" />
+        <x-card class="" type="ear" card="littleowlear" energy="" description="" />
+        <x-card class="" type="ear" card="lotus" energy="" description="" />
+        <x-card class="" type="ear" card="nimoear" energy="" description="" />
+        <x-card class="" type="ear" card="nutcracketear" energy="" description="" />
+        <x-card class="" type="ear" card="nyan" energy="" description="" />
+        <x-card class="" type="ear" card="pagona" energy="" description="" />
+        <x-card class="" type="ear" card="peacemakerear" energy="" description="" />
+        <x-card class="" type="ear" card="pinkcheeck" energy="" description="" />
+        <x-card class="" type="ear" card="puppy" energy="" description="" />
+        <x-card class="" type="ear" card="riskybird" energy="" description="" />
+        <x-card class="" type="ear" card="rosa" energy="" description="" />
+        <x-card class="" type="ear" card="sakura" energy="" description="" />
+        <x-card class="" type="ear" card="seaslug" energy="" description="" />
+        <x-card class="" type="ear" card="sidebarb" energy="" description="" />
+        <x-card class="" type="ear" card="smallfrill" energy="" description="" />
+        <x-card class="" type="ear" card="swirl" energy="" description="" />
+        <x-card class="" type="ear" card="tassels" energy="" description="" />
+        <x-card class="" type="ear" card="tinyfan" energy="" description="" />
+        <x-card class="" type="ear" card="zen" energy="" description="" />
     </div>
 </body>
 
