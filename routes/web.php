@@ -39,6 +39,23 @@ Route::get('/', function () {
     $rage = "<span class='debuff tooltip'>Rage<span class='tooltiptext'>Ráiva</span></span>";
     $cleanser = "<span class='debuff tooltip'>Cleanser<span class='tooltiptext'>Limpador</span></span>";
     $dispel = "<span class='debuff tooltip'>Dispel<span class='tooltiptext'>Dissipar</span></span>";
+    $blackmail = "<span class='debuff tooltip'>Blackmail<span class='tooltiptext'>Chantagem</span></span>";
+    $stealth = "<span class='debuff tooltip'>Stealth<span class='tooltiptext'>Furtividade</span></span>";
+    $jinx = "<span class='debuff tooltip'>Jinx<span class='tooltiptext'>Azar</span></span>";
+    $steal = "<span class='debuff tooltip'>Steal<span class='tooltiptext'>Roubar</span></span>";
+    $doubt = "<span class='debuff tooltip'>Doubt<span class='tooltiptext'>Dúvida</span></span>";
+    $mushroom = "<span class='debuff tooltip'>Mushroom<span class='tooltiptext'>Cogumelo</span></span>";
+    $goo = "<span class='debuff tooltip'>Goo<span class='tooltiptext'>Gosma</span></span>";
+    $strawberry = "<span class='debuff tooltip'>Strawberry<span class='tooltiptext'>Morango</span></span>";
+    $lumbershield = "<span class='debuff tooltip'>Lumber Shield<span class='tooltiptext'>Escudo de Madeira</span></span>";
+    $stunned = "<span class='debuff tooltip'>Stunned<span class='tooltiptext'>Atordoado</span></span>";
+    $retain = "<span class='debuff tooltip'>Retain<span class='tooltiptext'>Reter</span></span>";
+    $purewater = "<span class='debuff tooltip'>Pure Water<span class='tooltiptext'>Água pura</span></span>";
+    $bubble = "<span class='debuff tooltip'>Bubble<span class='tooltiptext'>Bolha</span></span>";
+    $meditates = "<span class='debuff tooltip'>Meditates<span class='tooltiptext'>Medita</span></span>";
+    $clover = "<span class='debuff tooltip'>Clover<span class='tooltiptext'>Trevo</span></span>";
+    $leaf = "<span class='debuff tooltip'>Leaf<span class='tooltiptext'>Folha</span></span>";
+    $trunk = "<span class='debuff tooltip'>Trunk<span class='tooltiptext'>Tronco</span></span>";
 
     return view('welcome', compact(
         'taunt',
@@ -65,5 +82,22 @@ Route::get('/', function () {
         'rage',
         'cleanser',
         'dispel',
+        'blackmail',
+        'stealth',
+        'jinx',
+        'steal',
+        'doubt',
+        'mushroom',
+        'goo',
+        'strawberry',
+        'lumbershield',
+        'stunned',
+        'retain',
+        'purewater',
+        'bubble',
+        'meditates',
+        'clover',
+        'leaf',
+        'trunk'
     ));
 });

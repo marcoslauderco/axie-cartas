@@ -80,7 +80,6 @@
         <x-card class="bug" type="tail" card="fishsnack" energy="1"
             description="Mire em qualquer aliado. No próximo turno, depois do ataque do alvo, apica {!! $weak !!} no atacante por 4 turnos " />
         <x-card class="beast" type="back" card="furball" energy="1" description="Acerte 2 vezes." />
-
         <x-card class="bug" type="back" card="garishworm" energy="2"
             description="Aplica 2 {!! $poison !!} por carta de ataque jogada nesse turno." />
         <x-card class="beast" type="tail" card="gerbil" energy="1"
@@ -91,46 +90,70 @@
             description="Embaralhe um {!! $void !!} na pilha de descarte do oponente. {!! $banish !!}." />
         <x-card class="aqua" type="back" card="goldfish" energy="1"
             description="Se {!! $initial !!}, compre 1 carta." />
-        <x-card class="bird" type="tail" card="granmasfan" energy="" description="" />
-        <x-card class="" type="" card="grasssnake" energy="" description="" />
-        <x-card class="" type="" card="gravelant" energy="" description="" />
-        <x-card class="" type="" card="greenthorns" energy="" description="" />
-
-        <x-card class="" type="" card="hare" energy="" description="" />
-        <x-card class="" type="" card="hatsune" energy="" description="" />
-        <x-card class="" type="" card="herbivore" energy="" description="" />
-        <x-card class="" type="" card="hermit" energy="" description="" />
-        <x-card class="" type="" card="hero" energy="" description="" />
-        <x-card class="" type="" card="hotbutt" energy="" description="" />
-        <x-card class="" type="" card="hungrybird" energy="" description="" />
-
-        <x-card class="" type="" card="iguana" energy="" description="" />
-        <x-card class="" type="" card="imp" energy="" description="" />
-        <x-card class="" type="" card="incisor" energy="" description="" />
-        <x-card class="" type="" card="indianstar" energy="" description="" />
-        <x-card class="" type="" card="jaguar" energy="" description="" />
-
-        <x-card class="" type="" card="kestrel" energy="" description="" />
-        <x-card class="" type="" card="kingfisher" energy="" description="" />
-        <x-card class="" type="" card="koi" energy="" description="" />
-        <x-card class="" type="" card="kotaromouth" energy="" description="" />
-
-        <x-card class="" type="" card="lagging" energy="" description="" />
-        <x-card class="" type="" card="lam" energy="" description="" />
-        <x-card class="" type="" card="leafbughorn" energy="" description="" />
-        <x-card class="" type="" card="littlebranch" energy="" description="" />
-        <x-card class="" type="" card="littleowl mouth" energy="" description="" />
-
-        <x-card class="" type="" card="merry" energy="" description="" />
-        <x-card class="" type="" card="mint" energy="" description="" />
-        <x-card class="" type="" card="mosquito" energy="" description="" />
-
-        <x-card class="" type="" card="navaga" energy="" description="" />
-        <x-card class="" type="" card="nimo" energy="" description="" />
-        <x-card class="" type="" card="nutcrackermouth" energy="" description="" />
-        <x-card class="" type="" card="nutcrackertail" energy="" description="" />
-
-        <x-card class="" type="" card="oranda" energy="" description="" />
+        <x-card class="bird" type="tail" card="granmasfan" energy="1"
+            description="{!! $initial !!}. Ataca todos os inimigos. Aplica {!! $vulnerable !!} por 4 turnos." />
+        <x-card class="reptile" type="tail" card="grasssnake" energy="1"
+            description="Aplica {!! $hex !!} por 4 turnos." />
+        <x-card class="bug" type="tail" card="gravelant" energy="1"
+            description="Mire em um aliado. No próximo turno, depois do ataque do alvo, aplica {!! $fear !!} no atacante por 4 turnos." />
+        <x-card class="reptile" type="back" card="greenthorns" energy="1"
+            description="Aplica 2 de {!! $poison !!} X 6 vezes em um alvo aleatório. Cura esse Axie em 20 de vida." />
+        <x-card class="beast" type="tail" card="hare" energy="1"
+            description="Se {!! $initial !!}, compre 1 carta." />
+        <x-card class="plant" type="tail" card="hatsune" energy="1"
+            description="Mire em um aliado. No próximo turno, depois do ataque do alvo, aplica {!! $fear !!} no atacante por 4 turnos." />
+        <x-card class="plant" type="mouth" card="herbivore" energy="1"
+            description="Se {!! $initial !!}, Cura 15 de vida." />
+        <x-card class="aqua" type="back" card="hermit" energy="1"
+            description="Mire em um aliado. Negue 1 próximo ataque no aliado alvo." />
+        <x-card class="beast" type="back" card="hero" energy="1" description="Compre 1 carta." />
+        <x-card class="plant" type="tail" card="hotbutt" energy="1"
+            description="Embaralhe 3 {!! $burns !!} na pilha de descarte do oponente." />
+        <x-card class="bird" type="mouth" card="hungrybird" energy="1"
+            description="Se {!! $initial !!}, cura 15 de vida." />
+        <x-card class="reptile" type="tail" card="iguana" energy="1"
+            description="Aplica {!! $weak !!} por 4 turnos" />
+        <x-card class="beast" type="horn" card="imp" energy="1"
+            description="Custa 0 de energia na forma {!! $fury !!}." />
+        <x-card class="reptile" type="horn" card="incisor" energy="1"
+            description="Aplica {!! $bleed !!} por 4 turnos" />
+        <x-card class="reptile" type="back" card="indianstar" energy="1"
+            description="Mire em um aliado. No próximo turno, depois do alvo ser atacado, reflete 25% do escudo perdido." />
+        <x-card class="beast" type="back" card="jaguar" energy="1"
+            description="Aplica {!! $bleed !!} por 4 turnos" />
+        <x-card class="bird" type="horn" card="kestrel" energy="1"
+            description="Aplica {!! $disarmed !!} por 4 turnos" />
+        <x-card class="bird" type="back" card="kingfisher" energy="1"
+            description="Mire em um aliado. No próximo ataque contra o alvo é refletido 85 de DANO." />
+        <x-card class="aqua" type="tail" card="koi" energy="2"
+            description="Da 15 de DANO Bônus por Aliado Aquatico." />
+        <x-card class="reptile" type="mouth" card="kotaromouth" energy="1"
+            description="Da 2 de acerto em inimigos aleatórios. Ganha 1 energia se acertar pelo menos 2 inimigos." />
+        <x-card class="bug" type="horn" card="lagging" energy="1"
+            description="Aplica {!! $weak !!} por 4 turnos" />
+        <x-card class="aqua" type="mouth" card="lam" energy="1"
+            description="Cause 20 de DANO extra se a vida deste Axie estiver acima de 75%" />
+        <x-card class="bug" type="horn" card="leafbughorn" energy="1"
+            description="Quando comprada, ganha 30 de escudo." />
+        <x-card class="beast" type="horn" card="littlebranch" energy="2"
+            description="Ganha 1 {!! $rage !!} por 1 aliado vivo (incluindo convocações)" />
+        <x-card class="bird" type="mouth" card="littleowl mouth" energy="1"
+            description="Todas as cartas 'Little Owl' deste Axie ganham 6 de dano nesta batalha" />
+        <x-card class="beast" type="horn" card="merry" energy="1" description="Mire qualquer aliado." />
+        <x-card class="plant" type="back" card="mint" energy="1"
+            description="Proteja seu time e aplique 1 {!! $cleanser !!}" />
+        <x-card class="bug" type="mouth" card="mosquito" energy="1"
+            description="Cure a vida igual a 50% do DANO não bloqueado." />
+        <x-card class="aqua" type="tail" card="navaga" energy="1"
+            description="Se {!! $initial !!}, dê 15 mais de DANO" />
+        <x-card class="aqua" type="tail" card="nimo" energy="0"
+            description="Compre 1 carta. Ganha 1 de energia. {!! $banish !!}" />
+        <x-card class="beast" type="mouth" card="nutcrackermouth" energy="1"
+            description="Todas as cartas 'Nut Cracker' deste Axie ganham 6 de dano nesta batalha" />
+        <x-card class="beast" type="tail" card="nutcrackertail" energy="1"
+            description="Todas as cartas 'Nut Cracker' deste Axie ganham 6 de dano nesta batalha" />
+        <x-card class="aqua" type="horn" card="oranda" energy="2"
+            description="{!! $dispel !!} até 2 buffs no alvo." />
 
         <x-card class="" type="" card="parasite" energy="" description="" />
         <x-card class="" type="" card="peacemaker" energy="" description="" />
@@ -157,7 +180,7 @@
 
         <x-card class="" type="" card="sandal" energy="" description="" />
         <x-card class="" type="" card="scalyspear" energy="" description="" />
-        <x-card class="" type="" card="scaluspoon" energy="" description="" />
+        <x-card class="" type="" card="scalyspoon" energy="" description="" />
         <x-card class="" type="" card="scarab" energy="" description="" />
         <x-card class="" type="" card="serious" energy="" description="" />
         <x-card class="" type="" card="shiba" energy="" description="" />
@@ -167,7 +190,7 @@
         <x-card class="" type="" card="silencewhisper" energy="" description="" />
         <x-card class="" type="" card="snailshell" energy="" description="" />
         <x-card class="" type="" card="snakejar" energy="" description="" />
-        <x-card class="" type="" card="spikwing" energy="" description="" />
+        <x-card class="" type="" card="spikywing" energy="" description="" />
         <x-card class="" type="" card="sponge" energy="" description="" />
         <x-card class="" type="" card="squareteeth" energy="" description="" />
         <x-card class="" type="" card="strawberryshortcake" energy="" description="" />

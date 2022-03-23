@@ -98,7 +98,7 @@ body {
     background-color: #eddabf;
 }
 
-@include card(89vw);
+@include card(43vw);
 
 .aqua .description {
     background: linear-gradient(360deg, rgb(18, 56, 77) 0%, rgb(25, 75, 102) 100%);
@@ -121,25 +121,25 @@ body {
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
-    @include card(43vw);
+    @include card(29vw);
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
-    @include card(29vw);
+    @include card(19vw);
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
-    @include card(19vw);
+    @include card(18vw);
 }
 
 // X-Large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
-    @include card(18vw);
+    @include card(17vw);
 }
 
 // XX-Large devices (larger desktops, 1400px and up)
 @media (min-width: 1400px) {
-    @include card(17vw);
+    @include card(10vw);
 }
