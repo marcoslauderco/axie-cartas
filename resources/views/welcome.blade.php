@@ -132,11 +132,46 @@
 
         <x-card class="" type="" card="oranda" energy="" description="" />
 
-        <x-card class="" type="" card="" energy="" description="" />
+        <x-card class="" type="" card="parasite" energy="" description="" />
+        <x-card class="" type="" card="peacemaker" energy="" description="" />
+        <x-card class="" type="" card="perch" energy="" description="" />
+        <x-card class="" type="" card="pigeonpost" energy="" description="" />
+        <x-card class="" type="" card="pinder" energy="" description="" />
+        <x-card class="" type="" card="pirhana" energy="" description="" />
+        <x-card class="" type="" card="pliers" energy="" description="" />
+        <x-card class="" type="" card="pocky" energy="" description="" />
+        <x-card class="" type="" card="postfight" energy="" description="" />
+        <x-card class="" type="" card="potato leaf" energy="" description="" />
+        <x-card class="" type="" card="pumpkin" energy="" description="" />
+        <x-card class="" type="" card="pupae" energy="" description="" />
 
-        <x-card class="" type="" card="" energy="" description="" />
+        <x-card class="" type="" card="ranchu" energy="" description="" />
+        <x-card class="" type="" card="raven" energy="" description="" />
+        <x-card class="" type="" card="razorbite" energy="" description="" />
+        <x-card class="" type="" card="redear" energy="" description="" />
+        <x-card class="" type="" card="rice" energy="" description="" />
+        <x-card class="" type="" card="riskybeast" energy="" description="" />
+        <x-card class="" type="" card="riskyfish" energy="" description="" />
+        <x-card class="" type="" card="ronin" energy="" description="" />
+        <x-card class="" type="" card="rosebud" energy="" description="" />
 
-        <x-card class="" type="" card="" energy="" description="" />
+        <x-card class="" type="" card="sandal" energy="" description="" />
+        <x-card class="" type="" card="scalyspear" energy="" description="" />
+        <x-card class="" type="" card="scaluspoon" energy="" description="" />
+        <x-card class="" type="" card="scarab" energy="" description="" />
+        <x-card class="" type="" card="serious" energy="" description="" />
+        <x-card class="" type="" card="shiba" energy="" description="" />
+        <x-card class="" type="" card="shiitake" energy="" description="" />
+        <x-card class="" type="" card="shoalstar" energy="" description="" />
+        <x-card class="" type="" card="shrmp" energy="" description="" />
+        <x-card class="" type="" card="silencewhisper" energy="" description="" />
+        <x-card class="" type="" card="snailshell" energy="" description="" />
+        <x-card class="" type="" card="snakejar" energy="" description="" />
+        <x-card class="" type="" card="spikwing" energy="" description="" />
+        <x-card class="" type="" card="sponge" energy="" description="" />
+        <x-card class="" type="" card="squareteeth" energy="" description="" />
+        <x-card class="" type="" card="strawberryshortcake" energy="" description="" />
+        <x-card class="" type="" card="swallow" energy="" description="" />
 
 
         {{-- <x-card class="" type="" card="" energy="" description="" /> --}}
