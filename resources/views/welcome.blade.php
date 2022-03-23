@@ -78,7 +78,7 @@
         <x-card class="bird" type="horn" card="featherspear" energy="1"
             description="Cause 20 de DANO a mais para cada carta de Lança usada neste turno." />
         <x-card class="bug" type="tail" card="fishsnack" energy="1"
-            description="Mire em qualquer aliado. No próximo turno, depois do ataque do alvo, apica {!! $week !!} no atacante por 4 turnos " />
+            description="Mire em qualquer aliado. No próximo turno, depois do ataque do alvo, apica {!! $weak !!} no atacante por 4 turnos " />
         <x-card class="beast" type="back" card="furball" energy="1" description="Acerte 2 vezes." />
 
         <x-card class="bug" type="back" card="garishworm" energy="2"
