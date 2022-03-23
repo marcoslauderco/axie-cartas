@@ -38,6 +38,7 @@ Route::get('/', function () {
     $disarmed = "<span class='debuff tooltip'>Disarmed<span class='tooltiptext'>Desarmado</span></span>";
     $rage = "<span class='debuff tooltip'>Rage<span class='tooltiptext'>Ráiva</span></span>";
     $cleanser = "<span class='debuff tooltip'>Cleanser<span class='tooltiptext'>Limpador</span></span>";
+    $cleanse = "<span class='debuff tooltip'>Cleanse<span class='tooltiptext'>Limpa</span></span>";
     $dispel = "<span class='debuff tooltip'>Dispel<span class='tooltiptext'>Dissipar</span></span>";
     $blackmail = "<span class='debuff tooltip'>Blackmail<span class='tooltiptext'>Chantagem</span></span>";
     $stealth = "<span class='debuff tooltip'>Stealth<span class='tooltiptext'>Furtividade</span></span>";
@@ -56,6 +57,8 @@ Route::get('/', function () {
     $clover = "<span class='debuff tooltip'>Clover<span class='tooltiptext'>Trevo</span></span>";
     $leaf = "<span class='debuff tooltip'>Leaf<span class='tooltiptext'>Folha</span></span>";
     $trunk = "<span class='debuff tooltip'>Trunk<span class='tooltiptext'>Tronco</span></span>";
+    $confused = "<span class='debuff tooltip'>Confused<span class='tooltiptext'>Confusão</span></span>";
+    $bubble = "<span class='debuff tooltip'>Bubble<span class='tooltiptext'>Bolha</span></span>";
 
     return view('welcome', compact(
         'taunt',
@@ -81,6 +84,7 @@ Route::get('/', function () {
         'disarmed',
         'rage',
         'cleanser',
+        'cleanse',
         'dispel',
         'blackmail',
         'stealth',
@@ -98,6 +102,8 @@ Route::get('/', function () {
         'meditates',
         'clover',
         'leaf',
-        'trunk'
+        'trunk',
+        'confused',
+        'bubble'
     ));
 });
