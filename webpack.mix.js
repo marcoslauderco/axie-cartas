@@ -1,4 +1,5 @@
 const mix = require('laravel-mix');
+require('laravel-mix-simple-image-processing')
 
 /*
  |--------------------------------------------------------------------------
@@ -12,6 +13,14 @@ const mix = require('laravel-mix');
  */
 
 mix.js('resources/js/app.js', 'public/js')
-    // .copy('resources/card-img', 'public/images')
-    // .copy('resources/card-ears', 'public/images')
     .sass('resources/css/app.scss', 'public/css').version();
+mix.imgs({
+    source: 'resources/card-img',
+    destination: 'public/images',
+    // ... other optional parameters
+})
+mix.imgs({
+    source: 'resources/card-ears',
+    destination: 'public/images',
+    // ... other optional parameters
+})
