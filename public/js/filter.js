@@ -1,0 +1,1 @@
+(()=>{function a(a){var s=$("#sel-"+a).val();s?($(".card").addClass("hide-by-"+a),$("."+s).removeClass("hide-by-"+a)):$(".card").removeClass("hide-by-"+a)}$("#sel-class").change((function(){a("class")})),$("#sel-part").change((function(){a("part")})),$((function(){a("class"),a("part")}))})();

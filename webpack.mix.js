@@ -13,14 +13,15 @@ require('laravel-mix-simple-image-processing')
  */
 
 mix.js('resources/js/app.js', 'public/js')
+    .js('resources/js/filter.js', 'public/js').version()
     .sass('resources/css/app.scss', 'public/css').version();
-mix.imgs({
-    source: 'resources/card-img',
-    destination: 'public/images',
-    imageminPngquantOptions: { quality: [0, 0.1] }
-})
-mix.imgs({
-    source: 'resources/card-ears',
-    destination: 'public/images',
-    imageminPngquantOptions: { quality: [0, 0.1] }
-})
+// mix.imgs({
+//     source: 'resources/card-img',
+//     destination: 'public/images',
+//     imageminPngquantOptions: { quality: [0, 0.1] }
+// })
+// mix.imgs({
+//     source: 'resources/card-ears',
+//     destination: 'public/images',
+//     imageminPngquantOptions: { quality: [0, 0.1] }
+// })
