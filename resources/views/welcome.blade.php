@@ -35,6 +35,10 @@
         @include('cards.cards')
         @include('cards.ear')
     </section>
+    <footer>
+        <a href="https://discord.gg/2zuh7Ufhy8" target="_blank">Discord do Desenvolvedor<br>Developer Discord</a>
+
+    </footer>
     <script src="{{ mix('js/filter.js') }}"></script>
 </body>
 
