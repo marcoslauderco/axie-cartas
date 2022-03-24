@@ -182,7 +182,8 @@ body {
 select {
     /* Reset */
     appearance: none;
-    border: 0;
+    border: 1px solid;
+    border-radius: 10px;
     outline: 0;
     font: inherit;
     /* Personalize */
@@ -191,7 +192,6 @@ select {
     background: url(../svg/down.svg) no-repeat right 0.8em center / 1.4em,
         linear-gradient(to left, $glass-icon 0%, $glass 100%);
     color: $preto;
-    border-radius: 0.25em;
     box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -237,7 +237,7 @@ footer {
     a {
         text-align: center;
         margin-top: 25px;
-        max-width: 250px;
+        max-width: 350px;
         text-decoration: none;
         color: $footer-after-color;
         border: 1px solid;
