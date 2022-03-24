@@ -17,10 +17,10 @@ mix.js('resources/js/app.js', 'public/js')
 mix.imgs({
     source: 'resources/card-img',
     destination: 'public/images',
-    // ... other optional parameters
+    imageminPngquantOptions: { quality: [0, 0.1] }
 })
 mix.imgs({
     source: 'resources/card-ears',
     destination: 'public/images',
-    // ... other optional parameters
+    imageminPngquantOptions: { quality: [0, 0.1] }
 })
