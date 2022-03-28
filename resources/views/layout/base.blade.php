@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Marcos Lauder Correia de Oliveira">
+    <meta name="description" content="Axie BR - Site de tradução de cartas e itens do Axie Infinity Origin para Português do Brasil">
     <title>{{ env('APP_NAME') }}</title>
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
     @yield('css')
