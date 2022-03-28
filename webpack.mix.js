@@ -14,7 +14,9 @@ require('laravel-mix-simple-image-processing')
 
 mix.js('resources/js/app.js', 'public/js')
     .js('resources/js/filter.js', 'public/js').version()
-    .sass('resources/css/app.scss', 'public/css').version();
+    .js('resources/js/header.js', 'public/js').version()
+    .sass('resources/css/app.scss', 'public/css').version()
+    .sass('resources/css/cards.scss', 'public/css').version();
 mix.imgs({
     source: 'resources/card-img',
     destination: 'public/images',

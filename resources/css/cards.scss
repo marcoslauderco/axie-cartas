@@ -1,0 +1,165 @@
+@import "variables";
+
+@mixin card($card-width) {
+    .filter {
+        .select {
+            width: $card-width * 2;
+        }
+    }
+    .card {
+        width: $card-width;
+        height: calc(1350 * $card-width / 900);
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+
+        .topo {
+            .energy {
+                width: calc($card-width * 15 / 100);
+                height: calc($card-width * 15 / 100);
+                background-color: #3959cc;
+                margin-top: calc($card-width * 7.5 / 100);
+                margin-left: calc($card-width * 7.5 / 100);
+                border-radius: 50%;
+                color: $branco;
+                text-align: center;
+                font-size: calc($card-width * 12 / 100);
+                //font-weight: 700;
+                //font-family: "Kameron", serif;
+                font-family: "Ultra", serif;
+                font-weight: 400;
+            }
+        }
+
+        .skill {
+            width: calc($card-width * 60 / 100);
+            height: calc($card-width * 10 / 100);
+            margin-top: calc($card-width * 72.5 / 100);
+            margin-left: calc($card-width * 35 / 100);
+        }
+
+        .description {
+            width: calc($card-width * 70 / 100);
+            height: calc($card-width * 20 / 100);
+            margin-top: calc($card-width * 2.5 / 100);
+            margin-left: calc($card-width * 15 / 100);
+            border-radius: calc($card-width * 100 / 100);
+            color: $branco;
+            padding: calc($card-width * 5 / 100);
+            font-size: calc($card-width * 5 / 100);
+            text-align: center;
+            font-family: "Roboto", sans-serif;
+            font-weight: 300;
+
+            .debuff {
+                font-weight: 500;
+                color: #ffe500;
+                cursor: pointer;
+            }
+        }
+    }
+    // TOOLTIP
+    .tooltip {
+        position: relative;
+        display: inline-block;
+        border-bottom: 1px dotted black;
+    }
+
+    .tooltip .tooltiptext {
+        visibility: hidden;
+        background-color: lighten(#ffe500, 30);
+        color: #121;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        width: calc($card-width * 60 / 100);
+
+        /* Position the tooltip */
+        position: absolute;
+        z-index: 1;
+        bottom: 100%;
+        margin-left: calc($card-width * 60 / 250 * -1);
+
+        /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+        opacity: 0;
+        transition: opacity 1s;
+    }
+
+    .tooltip:hover .tooltiptext {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+.hide-by-class {
+    display: none !important;
+}
+.hide-by-part {
+    display: none !important;
+}
+.cards,
+.filter {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    background-color: $bg-color;
+}
+
+.cards {
+    justify-content: space-evenly;
+    padding-top: 2.5vw;
+    padding-bottom: 5vw;
+}
+
+.filter {
+    justify-content: start;
+    padding-top: 5vw;
+    padding-bottom: 2.5vw;
+}
+
+@include card(43vw);
+
+.aqua .description {
+    background: linear-gradient(360deg, rgb(18, 56, 77) 0%, rgb(25, 75, 102) 100%);
+}
+.plant .description {
+    background: linear-gradient(360deg, rgba(52, 75, 33, 255) 0%, rgba(66, 95, 43, 255) 100%);
+}
+.bug .description {
+    background: linear-gradient(360deg, rgb(80, 21, 21) 0%, rgba(100, 42, 42, 255) 100%);
+}
+.beast .description {
+    background: linear-gradient(360deg, rgba(86, 47, 18, 255) 0%, rgba(112, 62, 27, 255) 100%);
+}
+.bird .description {
+    background: linear-gradient(360deg, rgba(75, 32, 46, 254) 0%, rgba(102, 42, 61, 255) 100%);
+}
+.reptile .description {
+    background: linear-gradient(360deg, rgba(67, 33, 49, 255) 0%, rgba(85, 44, 62, 255) 100%);
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    @include card(29vw);
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    @include card(19vw);
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    @include card(18vw);
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    @include card(17vw);
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+    @include card(10vw);
+}
