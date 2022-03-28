@@ -1,5 +1,6 @@
 const mix = require('laravel-mix');
-require('laravel-mix-simple-image-processing')
+// require('laravel-mix-simple-image-processing');
+require('laravel-mix-webp');
 
 /*
  |--------------------------------------------------------------------------
@@ -17,18 +18,33 @@ mix.js('resources/js/app.js', 'public/js')
     .js('resources/js/header.js', 'public/js').version()
     .sass('resources/css/app.scss', 'public/css').version()
     .sass('resources/css/cards.scss', 'public/css').version();
-mix.imgs({
-    source: 'resources/card-img',
-    destination: 'public/images',
-    imageminPngquantOptions: { quality: [0, 0.1] }
+
+
+// mix.imgs({
+//     source: 'resources/card-img',
+//     destination: 'public/images',
+//     imageminPngquantOptions: { quality: [0, 0.1] }
+// });
+// mix.imgs({
+//     source: 'resources/card-ears',
+//     destination: 'public/images',
+//     imageminPngquantOptions: { quality: [0, 0.1] }
+// });
+// mix.imgs({
+//     source: 'resources/card-eye',
+//     destination: 'public/images',
+//     imageminPngquantOptions: { quality: [0, 0.1] }
+// });
+
+mix.ImageWebp({
+    from: 'resources/card-img',
+    to: 'public/images',
 });
-mix.imgs({
-    source: 'resources/card-ears',
-    destination: 'public/images',
-    imageminPngquantOptions: { quality: [0, 0.1] }
+mix.ImageWebp({
+    from: 'resources/card-ears',
+    to: 'public/images',
 });
-mix.imgs({
-    source: 'resources/card-eye',
-    destination: 'public/images',
-    imageminPngquantOptions: { quality: [0, 0.1] }
+mix.ImageWebp({
+    from: 'resources/card-eye',
+    to: 'public/images',
 });
