@@ -34,6 +34,7 @@
     <section class="cards">
         @include('cards.cards')
         @include('cards.ear')
+        @include('cards.eye')
     </section>
     <footer>
         <a href="https://discord.gg/2zuh7Ufhy8" target="_blank">Discord do Desenvolvedor<br>Developer Discord</a>

@@ -19,9 +19,14 @@ mix.imgs({
     source: 'resources/card-img',
     destination: 'public/images',
     imageminPngquantOptions: { quality: [0, 0.1] }
-})
+});
 mix.imgs({
     source: 'resources/card-ears',
     destination: 'public/images',
     imageminPngquantOptions: { quality: [0, 0.1] }
-})
+});
+mix.imgs({
+    source: 'resources/card-eye',
+    destination: 'public/images',
+    imageminPngquantOptions: { quality: [0, 0.1] }
+});
