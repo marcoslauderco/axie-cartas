@@ -1,7 +1,7 @@
 <x-card class="plant" type="eye" card="papi" energy="1" description="Escolha qualquer aliado. Sempre que comprada, cura 20 de VIDA." />
-<x-card class="plant" type="eye" card="confusion" energy="1" description="" />
-<x-card class="plant" type="eye" card="cucumberslive" energy="2" description="" />
-<x-card class="plant" type="eye" card="blossom" energy="0" description="" />
+<x-card class="plant" type="eye" card="confusion" energy="1" description="Embaralhe 1 {!!$confused!!} no baralho de descarte do oponente." />
+<x-card class="plant" type="eye" card="cucumberslive" energy="2" description="Cure seu time e aplique 5 {!!$healingboost!!}" />
+<x-card class="plant" type="eye" card="blossom" energy="0" description="Coloque 1 carta de Planta do seu baralho de compra para sua mão. {!!$banish!!}" />
 <x-card class="reptile" type="eye" card="gecko" energy="0" 0 description="" />
 <x-card class="reptile" type="eye" card="tricky" energy="1" description="" />
 <x-card class="reptile" type="eye" card="scar" energy="0" description="" />

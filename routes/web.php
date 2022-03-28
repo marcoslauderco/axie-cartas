@@ -59,6 +59,7 @@ Route::get('/', function () {
     $trunk = "<span class='debuff tooltip'>Trunk<span class='tooltiptext'>Tronco</span></span>";
     $confused = "<span class='debuff tooltip'>Confused<span class='tooltiptext'>Confusão</span></span>";
     $bubble = "<span class='debuff tooltip'>Bubble<span class='tooltiptext'>Bolha</span></span>";
+    $healingboost = "<span class='debuff tooltip'>Healing Boost<span class='tooltiptext'>Aumento de cura</span></span>";
 
     return view('welcome', compact(
         'taunt',
@@ -104,6 +105,7 @@ Route::get('/', function () {
         'leaf',
         'trunk',
         'confused',
-        'bubble'
+        'bubble',
+        'healingboost'
     ));
 });
