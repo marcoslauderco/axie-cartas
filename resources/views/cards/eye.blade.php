@@ -18,7 +18,7 @@
 <x-card class="bug" type="eye" card="nerdy" energy="0" description="Descarte ate 2 cartas então compre a mesma quantidade. {!!$banish!!}." />
 <x-card class="bug" type="eye" card="neo" energy="1" description="Olhe para as 4 cartas do topo do baralho de compra do seu oponente. {!!$banish!!}." />
 <x-card class="bug" type="eye" card="kotaroeyes" energy="1" description="Ataca 1 inimigo aleatório e aplica {!!$deathmark!!} por 4 turnos." />
-<x-card class="aqua" type="eye" card="sleepless" energy="1" description="" />
-<x-card class="aqua" type="eye" card="clear" energy="0" description="" />
-<x-card class="aqua" type="eye" card="gero" energy="1" description="" />
-<x-card class="aqua" type="eye" card="telescope" energy="0" description="" />
+<x-card class="aqua" type="eye" card="sleepless" energy="1" description="Embaralhe 1 {!!$daze!!} no baralho de discarte do oponente." />
+<x-card class="aqua" type="eye" card="clear" energy="0" description="Descarte ate 2 cartas então compre a mesma quantidade. {!!$banish!!}." />
+<x-card class="aqua" type="eye" card="gero" energy="1" description="Aplica {!!$fragile!!} por 4 turnos." />
+<x-card class="aqua" type="eye" card="telescope" energy="0" description="Pegue 1 carta de Peixe do seu baralho de compra para sua mão. {!!$banish!!}." />
