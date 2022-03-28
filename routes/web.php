@@ -60,6 +60,8 @@ Route::get('/', function () {
     $confused = "<span class='debuff tooltip'>Confused<span class='tooltiptext'>Confusão</span></span>";
     $bubble = "<span class='debuff tooltip'>Bubble<span class='tooltiptext'>Bolha</span></span>";
     $healingboost = "<span class='debuff tooltip'>Healing Boost<span class='tooltiptext'>Aumento de cura</span></span>";
+    $mavis = "<span class='debuff tooltip'>Mavis<span class='tooltiptext'>Mavis</span></span>";
+    $littlerobin = "<span class='debuff tooltip'>Little Robin<span class='tooltiptext'>Pequeno Robin</span></span>";
 
     return view('welcome', compact(
         'taunt',
@@ -106,6 +108,8 @@ Route::get('/', function () {
         'trunk',
         'confused',
         'bubble',
-        'healingboost'
+        'healingboost',
+        'mavis',
+        'littlerobin'
     ));
 });

@@ -6,10 +6,10 @@
 <x-card class="reptile" type="eye" card="tricky" energy="1" description="Se {!!$initial!!} troque essa carta com 1 carta selecionada do teu baralha de banimento." />
 <x-card class="reptile" type="eye" card="scar" energy="0" description="Pegue 1 carta de Reptil do seu baralho de compra para sua mão. {!!$banish!!}" />
 <x-card class="reptile" type="eye" card="topaz" energy="1" description="Da 10 de DANO Bônus por carta banida." />
-<x-card class="bird" type="eye" card="mavis" energy="1" description="" />
-<x-card class="bird" type="eye" card="lucas" energy="0" description="" />
-<x-card class="bird" type="eye" card="littleowl eyes" energy="1" description="" />
-<x-card class="bird" type="eye" card="robin" energy="1" description="" />
+<x-card class="bird" type="eye" card="mavis" energy="1" description="Invoca 1 {!!$mavis!!}" />
+<x-card class="bird" type="eye" card="lucas" energy="0" description="Pegue 1 carta de Pássaro do seu baralho de compra para sua mão. {!!$banish!!}" />
+<x-card class="bird" type="eye" card="littleowl eyes" energy="1" description="Todas as cartas Little Owl desse axie ganha 6 de DANO na batalha." />
+<x-card class="bird" type="eye" card="robin" energy="1" description="Invoca 1 {!!$littlerobin!!}" />
 <x-card class="beast" type="eye" card="zeal" energy="0" description="" />
 <x-card class="beast" type="eye" card="littlepeas" energy="1" description="" />
 <x-card class="beast" type="eye" card="puppy" energy="0" description="" />
