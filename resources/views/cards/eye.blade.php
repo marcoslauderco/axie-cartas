@@ -14,10 +14,10 @@
 <x-card class="beast" type="eye" card="littlepeas" energy="1" description="Aplica {!!$vulnerable!!} por 4 turnos" />
 <x-card class="beast" type="eye" card="puppy" energy="0" description="Pegue 1 carta de Besta do seu baralho de compra para sua mão. {!!$banish!!}." />
 <x-card class="beast" type="eye" card="chubby" energy="2" description="Ataca todos os inimigos." />
-<x-card class="bug" type="eye" card="bookworm" energy="0" description="" />
-<x-card class="bug" type="eye" card="nerdy" energy="0" description="" />
-<x-card class="bug" type="eye" card="neo" energy="1" description="" />
-<x-card class="bug" type="eye" card="kotaroeyes" energy="1" description="" />
+<x-card class="bug" type="eye" card="bookworm" energy="0" description="Pegue 1 carta de Bug do seu baralho de compra para sua mão. {!!$banish!!}." />
+<x-card class="bug" type="eye" card="nerdy" energy="0" description="Descarte ate 2 cartas então compre a mesma quantidade. {!!$banish!!}." />
+<x-card class="bug" type="eye" card="neo" energy="1" description="Olhe para as 4 cartas do topo do baralho de compra do seu oponente. {!!$banish!!}." />
+<x-card class="bug" type="eye" card="kotaroeyes" energy="1" description="Ataca 1 inimigo aleatório e aplica {!!$deathmark!!} por 4 turnos." />
 <x-card class="aqua" type="eye" card="sleepless" energy="1" description="" />
 <x-card class="aqua" type="eye" card="clear" energy="0" description="" />
 <x-card class="aqua" type="eye" card="gero" energy="1" description="" />
