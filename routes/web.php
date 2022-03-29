@@ -15,16 +15,16 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
 
-    $taunt = "<span class='debuff tooltip'>Taunt<span class='tooltiptext'>Insulto</span></span>";
-    $deathmark = "<span class='debuff tooltip'>Death Mark<span class='tooltiptext'>Marca da Morte: Leva mais dano</span></span>";
-    $fear = "<span class='debuff tooltip'>Fear<span class='tooltiptext'>Medo: Erra o próximo ataque</span></span>";
-    $scry = "<span class='debuff tooltip'>Scry<span class='tooltiptext'>Vidência: Veja as próxima cartas a serem compradas</span></span>";
-    $banish = "<span class='debuff tooltip'>Banish<span class='tooltiptext'>Banir: Essa carta é banida e não pode mais ser comprada.</span></span>";
-    $weak = "<span class='debuff tooltip'>Weak<span class='tooltiptext'>Fraquesa: Sofre mais dano</span></span>";
-    $innate = "<span class='debuff tooltip'>Innate<span class='tooltiptext'>Inato</span></span>";
-    $daze = "<span class='debuff tooltip'>Daze<span class='tooltiptext'>Atordoa</span></span>";
-    $initial = "<span class='debuff tooltip'>Initial<span class='tooltiptext'>Inicial: Primeira carta jogada.</span></span>";
-    $damage_boost = "<span class='debuff tooltip'>Damage Boost<span class='tooltiptext'>Aumento de dano.</span></span>";
+    $taunt = "<span class='debuff tooltip'>Taunt<span class='tooltiptext'>Insulto: O Alvo é sempre alvejado por abilidades de ataque do inimigo</span></span>";
+    $deathmark = "<span class='debuff tooltip'>Death Mark<span class='tooltiptext'>Marca da Morte:Sempre que seu oponente joga uma carta de ataque, o alvo leva 13 de DANO por energia gasta</span></span>";
+    $fear = "<span class='debuff tooltip'>Fear<span class='tooltiptext'>Medo: Sempre que essa unidade usar uma carta de ataque, embaralha 1 CONFUSED no baralho de compra.</span></span>";
+    $scry = "<span class='debuff tooltip'>Scry<span class='tooltiptext'>Vidência: Olhe para as cartas do topo do seu baralho de compra, você deve descartar uma delas.</span></span>";
+    $banish = "<span class='debuff tooltip'>Banish<span class='tooltiptext'>Banir: Remove essa carta do seu baralho até o fim da partida.</span></span>";
+    $weak = "<span class='debuff tooltip'>Weak<span class='tooltiptext'>Fraquesa: O Alvo leva 20% menos DANO de ataque.</span></span>";
+    $innate = "<span class='debuff tooltip'>Innate<span class='tooltiptext'>Inicial: Começa cada partida com essa carta em sua mão.</span></span>";
+    $daze = "<span class='debuff tooltip'>Daze<span class='tooltiptext'>Atordoa: Carta não jogavel</span></span>";
+    $initial = "<span class='debuff tooltip'>Initial<span class='tooltiptext'>Inicial: Primeira carta jogada no turno.</span></span>";
+    $damage_boost = "<span class='debuff tooltip'>Damage Boost<span class='tooltiptext'>Aumento de dano: O alvo tem um aumento de DANO de ataque em 1 por estacado.</span></span>";
     $void = "<span class='debuff tooltip'>Void<span class='tooltiptext'>Vazio</span></span>";
     $sleep = "<span class='debuff tooltip'>Sleep<span class='tooltiptext'>Dormir</span></span>";
     $bleed = "<span class='debuff tooltip'>Bleed<span class='tooltiptext'>Sangrar</span></span>";
