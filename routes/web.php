@@ -22,13 +22,13 @@ Route::get('/', function () {
     $banish = "<span class='debuff tooltip'>Banish<span class='tooltiptext'>Banir: Remove essa carta do seu baralho até o fim da partida.</span></span>";
     $weak = "<span class='debuff tooltip'>Weak<span class='tooltiptext'>Fraquesa: O Alvo leva 20% menos DANO de ataque.</span></span>";
     $innate = "<span class='debuff tooltip'>Innate<span class='tooltiptext'>Inicial: Começa cada partida com essa carta em sua mão.</span></span>";
-    $daze = "<span class='debuff tooltip'>Daze<span class='tooltiptext'>Atordoa: Carta não jogavel</span></span>";
+    $daze = "<span class='debuff tooltip'>Daze<span class='tooltiptext'>Atordoa: [Carta] não jogavel</span></span>";
     $initial = "<span class='debuff tooltip'>Initial<span class='tooltiptext'>Inicial: Primeira carta jogada no turno.</span></span>";
     $damage_boost = "<span class='debuff tooltip'>Damage Boost<span class='tooltiptext'>Aumento de dano: O alvo tem um aumento de DANO de ataque em 1 por estacado.</span></span>";
-    $void = "<span class='debuff tooltip'>Void<span class='tooltiptext'>Vazio</span></span>";
-    $sleep = "<span class='debuff tooltip'>Sleep<span class='tooltiptext'>Dormir</span></span>";
-    $bleed = "<span class='debuff tooltip'>Bleed<span class='tooltiptext'>Sangrar</span></span>";
-    $fragile = "<span class='debuff tooltip'>Fragile<span class='tooltiptext'>Fragil</span></span>";
+    $void = "<span class='debuff tooltip'>Void<span class='tooltiptext'>Vazio: [Carta] Não jogavel, Etérea, Quando você compra 1 ou mais VOID, perde 1 de energia.</span></span>";
+    $sleep = "<span class='debuff tooltip'>Sleep<span class='tooltiptext'>Dormir: O Alvo não pode usar habilidade, se for atacado o sleep é removido.</span></span>";
+    $bleed = "<span class='debuff tooltip'>Bleed<span class='tooltiptext'>Sangrar: O alvo perde 15 de VIDA quando joga uma carta</span></span>";
+    $fragile = "<span class='debuff tooltip'>Fragile<span class='tooltiptext'>Fragil: Essa unidade recebe 20% menos escudo de habilidades.</span></span>";
     $feather = "<span class='debuff tooltip'>Feather<span class='tooltiptext'>Pena</span></span>";
     $poison = "<span class='debuff tooltip'>Poison<span class='tooltiptext'>Veneno: perde vida</span></span>";
     $vulnerable = "<span class='debuff tooltip'>Vulnerable<span class='tooltiptext'>Vuneravel</span></span>";
