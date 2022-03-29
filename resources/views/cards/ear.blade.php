@@ -26,12 +26,12 @@
 <x-card class="bird" type="ear" card="pinkcheeck" energy="0" description="Descarte até 2 cartas então compre a mesma quantidade. {!! $banish !!}" efect="banish" />
 <x-card class="beast" type="ear" card="puppy" energy="1" description="Cura seu time. Se {!! $initial !!}, remove 1 'Curse Card' do seu baralho." efect="initial" />
 <x-card class="bird" type="ear" card="riskybird" energy="1" description="Aplica {!! $weak !!} nesse Axie por 2 turnos." efect="weak" />
-<x-card class="plant" type="ear" card="rosa" energy="0" description="{!! $innate !!}. Aplica 2 {!! $poison !!} e {!! $sleep !!} por 2 turnos em um inimigo aleatório. {!! $banish !!}" efect="innate poison sleep banish" />
 <x-card class="plant" type="ear" card="sakura" energy="2" description="Escolha qualquer aliado. Sempre que jogar essa carta em batalha, cura esse Axie em 10 de Vida." />
+<x-card class="plant" type="ear" card="rosa" energy="0" description="{!! $innate !!}. Aplica 2 {!! $poison !!} e {!! $sleep !!} por 2 turnos em um inimigo aleatório. {!! $banish !!}" efect="innate poison sleep banish" />
 <x-card class="aqua" type="ear" card="seaslug" energy="2" description="{!! $cleanse !!} 2 desvantagens. Ganha 2 {!! $cleanser !!}" efect="cleanse cleanser" />
 <x-card class="reptile" type="ear" card="sidebarb" energy="1" description="Aplica 2 {!! $poison !!} e {!! $bleed !!} por 4 turnos em um inimigo aleatório." efect="poison bleed" />
 <x-card class="reptile" type="ear" card="smallfrill" energy="1" description="Aplica 3 {!! $poison !!} em todos os inimigos. Cura esse Axie em 30 de Vida." efect="poison" />
-<x-card class="reptile" type="ear" card="swirl" energy="1" description="Embaralhe 3 {!! $confused !!} no baralho de discarte do oponete." efect="confused" />
-<x-card class="bug" type="ear" card="tassels" energy="1" description="Cura seu time. Cura um bônus de 4 de Vida por cada carta em sua mão." />
 <x-card class="aqua" type="ear" card="tinyfan" energy="0" description="Compra 1 carta. Ganha 3 {!! $damage_boost !!}" efect="damage_boost" />
+<x-card class="reptile" type="ear" card="swirl" energy="1" description="Embaralhe 3 {!! $confused !!} no baralho de discarte do oponete." efect="confused" />
 <x-card class="beast" type="ear" card="zen" energy="1" description="Se {!! $initial !!}, esse Axie {!! $meditates !!}" efect="initial meditates" />
+<x-card class="bug" type="ear" card="tassels" energy="1" description="Cura seu time. Cura um bônus de 4 de Vida por cada carta em sua mão." />

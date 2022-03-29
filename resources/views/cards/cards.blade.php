@@ -1,7 +1,7 @@
 <x-card class="aqua" type="back" card="anemone" energy="1" description="Quando comprada cura 20 de vida." />
 <x-card class="aqua" type="horn" card="anemonehorn" energy="1" description="Quando comprada cura 20 de vida." />
-<x-card class="bug" type="tail" card="ant" energy="1" description="Aplica {!! $taunt !!} nesse axie por 4 turnos." efect="taunt" />
 <x-card class="bug" type="horn" card="antenna" energy="1" description="{!! $scry !!} 4 cartas. {!! $banish !!}." efect="scry banish" />
+<x-card class="bug" type="tail" card="ant" energy="1" description="Aplica {!! $taunt !!} nesse axie por 4 turnos." efect="taunt" />
 <x-card class="beast" type="horn" card="arco" energy="1" description="Essa carta não aciona segredos." />
 <x-card class="beast" type="mouth" card="axiekiss" energy="1" description="Mire em um inimigo. Aplica {!! $deathmark !!} por 4 turnos se a vida desse axies estiver abaixo de 50%" efect="deathmark" />
 <x-card class="aqua" type="horn" card="babylonia" energy="1" description="Aplica {!! $weak !!} por 4 turnos" efect="weak" />
@@ -37,8 +37,8 @@
 <x-card class="bug" type="back" card="garishworm" energy="2" description="Aplica 2 {!! $poison !!} por carta de ataque jogada nesse turno." efect="poison" />
 <x-card class="beast" type="tail" card="gerbil" energy="1" description="Se {!! $initial !!}, este ataque tem como alvo o segundo inimigo mais à frente." efect="initial" />
 <x-card class="reptile" type="tail" card="gila" energy="2" description="Ataca todos os inimigos. Da 2 bonus de DANO por {!! $poison !!} aplicado no iminigo." efect="poison" />
-<x-card class="beast" type="mouth" card="goda" energy="1" description="Embaralhe um {!! $void !!} na pilha de descarte do oponente. {!! $banish !!}." efect="void banish" />
 <x-card class="aqua" type="back" card="goldfish" energy="1" description="Se {!! $initial !!}, compre 1 carta." efect="initial" />
+<x-card class="beast" type="mouth" card="goda" energy="1" description="Embaralhe um {!! $void !!} na pilha de descarte do oponente. {!! $banish !!}." efect="void banish" />
 <x-card class="bird" type="tail" card="granmasfan" energy="1" description="{!! $initial !!}. Ataca todos os inimigos. Aplica {!! $vulnerable !!} por 4 turnos." efect="initial vulnerable" />
 <x-card class="reptile" type="tail" card="grasssnake" energy="1" description="Aplica {!! $hex !!} por 4 turnos." efect="hex" />
 <x-card class="bug" type="tail" card="gravelant" energy="1" description="Mire em um aliado. No próximo turno, depois do ataque do alvo, aplica {!! $fear !!} no atacante por 4 turnos." efect="fear" />
@@ -99,12 +99,12 @@
 <x-card class="bug" type="back" card="scarab" energy="1" description="Ganha 30 de escudo. Aplica {!! $doubt !!} por 4 turnos" efect="doubt" />
 <x-card class="plant" type="mouth" card="serious" energy="1" description="Descarte 1 carta da sua mão." />
 <x-card class="beast" type="tail" card="shiba" energy="2" description="Seu time ganha 3 {!! $fury !!} se a Vida deste Axie estiver abaixo de 50%." efect="fury" />
-<x-card class="plant" type="back" card="shiitake" energy="1" description="Invoque um {!! $mushroom !!}" efect="mushroom" />
 <x-card class="aqua" type="horn" card="shoalstar" energy="1" description="Se o alvo tiver menos de 120 de vida, mate-o instantaneamente." />
+<x-card class="plant" type="back" card="shiitake" energy="1" description="Invoque um {!! $mushroom !!}" efect="mushroom" />
 <x-card class="aqua" type="tail" card="shrmp" energy="1" description="Se {!! $initial !!}, Este ataque atinge o inimigo mais distante." efect="initial" />
 <x-card class="plant" type="mouth" card="silencewhisper" energy="1" description="Selecione um aliado." />
-<x-card class="bug" type="back" card="snailshell" energy="1" description="Selecione um aliado, no próximo turno depois que o alvo for atacado, embaralhe 1 {!! $goo !!} no baralho de descarte do seu oponente." efect="goo" />
 <x-card class="reptile" type="tail" card="snakejar" energy="1" description="Selecione um aliado. Nega a próxima perda de Vida no alvo, até 90 de vida." />
+<x-card class="bug" type="back" card="snailshell" energy="1" description="Selecione um aliado, no próximo turno depois que o alvo for atacado, embaralhe 1 {!! $goo !!} no baralho de descarte do seu oponente." efect="goo" />
 <x-card class="bug" type="back" card="spikywing" energy="1" description="Causa 25% a mais de DANO em escudos." />
 <x-card class="aqua" type="back" card="sponge" energy="1" description="Seleciona um aliado. No próximo turno, aplica 5 {!! $damage_boost !!} ao alvo com escudo se o seu escudo estiver quebrado." efect="damage_boost" />
 <x-card class="bug" type="mouth" card="squareteeth" energy="0" description="Se {!! $initial !!}, cause DANO extra igual ao escudo atual." efect="initial" />
