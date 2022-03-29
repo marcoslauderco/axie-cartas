@@ -21,7 +21,7 @@
 <x-card class="reptile" type="horn" card="cerastes" energy="1" description="Mire em qualquer aliado. O próximo ataque antes do alvo é refletido em 85 de DANO." />
 <x-card class="aqua" type="horn" card="clamshell" energy="1" description="Ganha 4 {!! $damage_boost !!} se esse ataque causar dano na vida do alvo" />
 <x-card class="bird" type="tail" card="cloud" energy="1" description="Esse ataque mira no Inimigo mais a frente não convocado" />
-<x-card class="beast" type="mouth" card="confident" energy="0" description="Escolha qualquer alidado, {!!cleanse!!} 1 desvantagem e garanta 2 {!!$rage!!}" />
+<x-card class="beast" type="mouth" card="confident" energy="0" description="Escolha qualquer alidado, {!!$cleanse!!} 1 desvantagem e garanta 2 {!!$rage!!}" />
 <x-card class="beast" type="tail" card="cottontail" energy="0" description="Cura qualquer aliado. Ganha 1 energia. {!! $banish !!}." />
 <x-card class="reptile" type="back" card="croc" energy="1" description="Mire em qualquer aliado. No próximo turno depois do ataque do alvo, apica {!! $bleed !!} no atacante por 4 turnos" />
 <x-card class="bird" type="horn" card="cuckoo" energy="1" description="Mire em qualquer aliado. Remova {!! $sleep !!}. O proximo ataque do alvo nesse turno da 50 mais de DANO." />
