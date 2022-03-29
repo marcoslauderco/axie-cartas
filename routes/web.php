@@ -37,12 +37,12 @@ Route::get('/', function () {
     $fury = "<span class='debuff tooltip'>Fury<span class='tooltiptext'>Fúria: Ganhe 1 Energia quando transformado. Cause o dobro de dano até o final do turno.</span></span>";
     $disarmed = "<span class='debuff tooltip'>Disarmed<span class='tooltiptext'>Desarmado: O alvo não pode usar habilidade de ataque.</span></span>";
     $rage = "<span class='debuff tooltip'>Rage<span class='tooltiptext'>Ráiva: +2 de DANO por RAGE estacado. Entra em FURY apartir de 10 RAGE estacado.</span></span>";
-    $cleanser = "<span class='debuff tooltip'>Cleanser<span class='tooltiptext'>Limpador: Remove desvantagem. máximo de 5 estacados.</span></span>";
-    $cleanse = "<span class='debuff tooltip'>Cleanse<span class='tooltiptext'>Limpa: Remove desvantagem.</span></span>";
-    $dispel = "<span class='debuff tooltip'>Dispel<span class='tooltiptext'>Dissipar</span></span>";
-    $blackmail = "<span class='debuff tooltip'>Blackmail<span class='tooltiptext'>Chantagem</span></span>";
-    $stealth = "<span class='debuff tooltip'>Stealth<span class='tooltiptext'>Furtividade</span></span>";
-    $jinx = "<span class='debuff tooltip'>Jinx<span class='tooltiptext'>Azar</span></span>";
+    $cleanser = "<span class='debuff tooltip'>Cleanser<span class='tooltiptext'>Limpador: Cada estacado nega 1 desvantagem de ser aplicada no alvo.</span></span>";
+    $cleanse = "<span class='debuff tooltip'>Cleanse<span class='tooltiptext'>Limpa: Remove desvantagem. até 5 estacados.</span></span>";
+    $dispel = "<span class='debuff tooltip'>Dispel<span class='tooltiptext'>Dissipar: Remove 1 vantagem do alvo, até 5 estacados.</span></span>";
+    $blackmail = "<span class='debuff tooltip'>Blackmail<span class='tooltiptext'>Chantagem: [CARTA] Aplica TAUNT no alvo mais distante. se não for usada coloque no topo do seu baralho de compra. BANISH</span></span>";
+    $stealth = "<span class='debuff tooltip'>Stealth<span class='tooltiptext'>Furtividade: O alvo não pode ser mirado diretamente. se jogado uma carta remove o Stealth.</span></span>";
+    $jinx = "<span class='debuff tooltip'>Jinx<span class='tooltiptext'>Azar: [CARTA] Não jogavel, Etérea, No final do seu turno seu último Axie leva 15 de DANO.</span></span>";
     $steal = "<span class='debuff tooltip'>Steal<span class='tooltiptext'>Roubar</span></span>";
     $doubt = "<span class='debuff tooltip'>Doubt<span class='tooltiptext'>Dúvida</span></span>";
     $mushroom = "<span class='debuff tooltip'>Mushroom<span class='tooltiptext'>Cogumelo</span></span>";
