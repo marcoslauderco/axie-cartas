@@ -13,7 +13,11 @@ $("#sel-class").change(function () {
 $("#sel-part").change(function () {
     filter("part");
 });
+$("#sel-efect").change(function () {
+    filter("efect");
+});
 $(function () {
     filter("class");
     filter("part");
+    filter("efect");
 });

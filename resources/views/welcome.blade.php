@@ -11,7 +11,7 @@
 @section('content')
 <section class="filter">
     <select id="sel-class" class="select">
-        <option value="">Classes - Class</option>
+        <option value="">- Classes - Class</option>
         <option value="beast">Besta - Beast</option>
         <option value="bug">Inseto - Bug</option>
         <option value="bird">Pássaro - Bird</option>
@@ -20,13 +20,20 @@
         <option value="reptile">Réptil - Reptile</option>
     </select>
     <select id="sel-part" class="select">
-        <option value="">Parte - Part</option>
+        <option value="">- Parte - Part</option>
         <option value="mouth">Boca - Mouth</option>
         <option value="horn">Chifre - Horn</option>
         <option value="back">Costas - Back</option>
         <option value="eye">Olhos - Eye</option>
         <option value="ear">Orelha - Ear</option>
         <option value="tail">Rabo - Tail</option>
+    </select>
+    <select id="sel-efect" class="select">
+        <option value="">- Efeitos -</option>
+        @foreach ($efeitos as $index => $efeito)
+        <option value="{{$index}}">{{$efeito}}</option>
+        @endforeach
+
     </select>
 </section>
 <section class="cards">
