@@ -116,3 +116,6 @@ Route::get('/', function () {
 
     return view('welcome', compact($efeitos_chaves, 'efeitos'));
 });
+Route::get('/sobre', function () {
+    return view('about');
+});

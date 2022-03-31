@@ -1,0 +1,25 @@
+.about {
+    display: flex;
+
+    div:nth-child(1) {
+        display: none;
+    }
+    div:nth-child(2) {
+        width: 100vw;
+        padding: 20px;
+    }
+}
+
+@media (min-width: 992px) {
+    .about div:nth-child(1) {
+        display: inline;
+        width: 45vw;
+        background-image: url("../img/axie_1.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .about div:nth-child(2) {
+        width: 45vw;
+    }
+}

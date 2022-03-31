@@ -19,10 +19,10 @@
             <a href="#" class="logo">
                 Axie BR
             </a>
-            <a href="#" class="active">Cartas</a>
+            <a href="/" class="active">Cartas</a>
             {{-- <a href="#">Runas (Futuramente)</a>
             <a href="#">Charms (Futuramente)</a> --}}
-            <a href="#">Sobre</a>
+            <a href="/sobre">Sobre</a>
             <button class="icon" id='btn-bars'><i class="fa fa-bars"></i></button>
         </nav>
     </header>

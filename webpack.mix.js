@@ -17,7 +17,8 @@ mix.js('resources/js/app.js', 'public/js')
     .js('resources/js/filter.js', 'public/js').version()
     .js('resources/js/header.js', 'public/js').version()
     .sass('resources/css/app.scss', 'public/css').version()
-    .sass('resources/css/cards.scss', 'public/css').version();
+    .sass('resources/css/cards.scss', 'public/css').version()
+    .sass('resources/css/about.scss', 'public/css').version();
 
 
 // mix.imgs({
