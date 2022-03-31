@@ -119,3 +119,9 @@ Route::get('/', function () {
 Route::get('/sobre', function () {
     return view('about');
 });
+Route::get('/runes', function () {
+    return view('runes');
+});
+Route::get('/charms', function () {
+    return view('charms');
+});
