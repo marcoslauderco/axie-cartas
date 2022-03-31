@@ -19,13 +19,15 @@
     color: $text-color;
     padding-top: 5vw;
     padding-bottom: 5vw;
+    flex-direction: column;
 }
 
 .itens {
     padding-left: 0vw;
     padding-right: 0vw;
+    justify-content: center;
     img {
         width: 100%;
-        max-width: 900px;
+        max-width: 750px;
     }
 }
