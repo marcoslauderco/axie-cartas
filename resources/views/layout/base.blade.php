@@ -19,10 +19,10 @@
             <a href="#" class="logo">
                 Axie BR
             </a>
-            <a href="/" class="active">Cartas</a>
-            <a href="/runes">Runes</a>
-            <a href="/charms">Charms</a>
-            <a href="/sobre">Sobre</a>
+            <a href="{{route('cards')}}" class="{{ Request::routeIs('cards') ? 'active' : '' }}">Cartas</a>
+            <a href="{{route('runes')}}" class="{{ Request::routeIs('runes') ? 'active' : '' }}">Runes</a>
+            <a href="{{route('charms')}}" class="{{ Request::routeIs('charms') ? 'active' : '' }}">Charms</a>
+            <a href="{{route('sobre')}}" class="{{ Request::routeIs('sobre') ? 'active' : '' }}">Sobre</a>
             <button class="icon" id='btn-bars'><i class="fa fa-bars"></i></button>
         </nav>
     </header>

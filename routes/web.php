@@ -115,13 +115,13 @@ Route::get('/', function () {
     $efeitos_chaves = array_keys($efeitos);
 
     return view('welcome', compact($efeitos_chaves, 'efeitos'));
-});
+})->name("cards");
 Route::get('/sobre', function () {
     return view('about');
-});
+})->name("sobre");
 Route::get('/runes', function () {
     return view('runes');
-});
+})->name("runes");
 Route::get('/charms', function () {
     return view('charms');
-});
+})->name("charms");
