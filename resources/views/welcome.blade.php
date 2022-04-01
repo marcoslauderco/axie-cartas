@@ -31,9 +31,23 @@
     <select id="sel-efect" class="select">
         <option value="">- Efeitos -</option>
         @foreach ($efeitos as $index => $efeito)
-        <option value="{{$index}}">{{$efeito}}</option>
+        <option value="{{ $index }}">{{ $efeito }}</option>
         @endforeach
 
+    </select>
+    <select id="sel-power" class="select">
+        <option value="">- Ataque, Defesa, Cura, Nenhum -</option>
+        <option value="atack">Ataque</option>
+        <option value="defense">Desesa</option>
+        <option value="heal">Cura</option>
+        <option value="power-none">Nenhum</option>
+
+    </select>
+    <select id="sel-energy" class="select">
+        <option value="">- Custo (Energia) -</option>
+        <option value="energy-0">0</option>
+        <option value="energy-1">1</option>
+        <option value="energy-2">2</option>
     </select>
 </section>
 <section class="cards">

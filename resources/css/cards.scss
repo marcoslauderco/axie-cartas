@@ -1,5 +1,38 @@
 @import "variables";
 
+@mixin action($card-width, $color) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $color;
+    width: calc($card-width * 29 / 100);
+    height: calc($card-width * 15 / 100);
+    margin-top: calc($card-width * 0.09);
+    position: relative;
+    left: calc($card-width * 0.03 * -1);
+    border-bottom-right-radius: 40%;
+    color: $branco;
+    font-size: calc($card-width * 0.095);
+    font-family: "Roboto", serif;
+    font-weight: 900;
+    &:before {
+        content: " ";
+        background-color: #ccb8a4;
+        height: calc($card-width * 15 / 100);
+        border-right: calc($card-width * 0.028) solid #ccb8a4;
+        border-top-right-radius: 100%;
+        border-bottom-right-radius: 100%;
+        left: -1px;
+    }
+    &:after {
+        content: " ";
+        background-color: transparent;
+        height: calc($card-width * 13 / 100);
+        border-right: calc($card-width * 0.06) solid $color;
+        border-bottom-right-radius: 600%;
+    }
+}
+
 @mixin card($card-width) {
     .filter {
         .select {
@@ -12,30 +45,52 @@
         background-size: cover;
         display: flex;
         flex-direction: column;
+        background-image: url("../img/frame.png");
 
         .topo {
+            display: flex;
+            width: $card-width;
+            min-height: calc($card-width * 15 / 100);
             .energy {
-                width: calc($card-width * 15 / 100);
-                height: calc($card-width * 15 / 100);
-                background-color: #3959cc;
-                margin-top: calc($card-width * 7.5 / 100);
-                margin-left: calc($card-width * 7.5 / 100);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: calc($card-width * 0.3);
+                height: calc($card-width * 0.3);
                 border-radius: 50%;
                 color: $branco;
-                text-align: center;
                 font-size: calc($card-width * 12 / 100);
-                //font-weight: 700;
-                //font-family: "Kameron", serif;
                 font-family: "Ultra", serif;
                 font-weight: 400;
+
+                p {
+                    background-color: #0030db;
+                    border-radius: 50%;
+                    width: calc($card-width * 0.15);
+                    height: calc($card-width * 0.15);
+                    text-align: center;
+                }
             }
+            .atack {
+                @include action($card-width, #bc061b);
+            }
+            .defense {
+                @include action($card-width, #0054a6);
+            }
+            .heal {
+                @include action($card-width, #008c60);
+            }
+        }
+        .img {
+            width: $card-width;
+            min-height: calc($card-width * 50 / 100);
         }
 
         .skill {
-            width: calc($card-width * 60 / 100);
-            height: calc($card-width * 10 / 100);
-            margin-top: calc($card-width * 72.5 / 100);
-            margin-left: calc($card-width * 35 / 100);
+            width: calc($card-width * 85 / 100);
+            height: calc($card-width * 27 / 100);
+            // margin-top: calc($card-width * 72.5 / 100);
+            margin-left: calc($card-width * 10 / 100);
         }
 
         .description {
@@ -43,7 +98,8 @@
             height: calc($card-width * 20 / 100);
             margin-top: calc($card-width * 2.5 / 100);
             margin-left: calc($card-width * 15 / 100);
-            border-radius: calc($card-width * 100 / 100);
+            border-bottom-left-radius: calc($card-width * 5 / 100);
+            border-bottom-right-radius: calc($card-width * 5 / 100);
             color: $branco;
             padding: calc($card-width * 5 / 100);
             font-size: calc($card-width * 5 / 100);
@@ -98,6 +154,12 @@
     display: none !important;
 }
 .hide-by-efect {
+    display: none !important;
+}
+.hide-by-power {
+    display: none !important;
+}
+.hide-by-energy {
     display: none !important;
 }
 .cards,
