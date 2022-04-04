@@ -18,7 +18,7 @@
 <x-card class="bug" type="eye" card="nerdy" energy="0" none="" description="Descarte ate 2 cartas então compre a mesma quantidade. {!!$banish!!}." efect="banish" />
 <x-card class="bug" type="eye" card="neo" energy="1" none="" description="Olhe para as 4 cartas do topo do baralho de compra do seu oponente. {!!$banish!!}." efect="banish" />
 <x-card class="bug" type="eye" card="kotaroeyes" energy="1" atack="50" description="Ataca 1 inimigo aleatório e aplica {!!$deathmark!!} por 4 turnos." efect="deathmark" />
-<x-card class="aqua" type="eye" card="sleepless" energy="1" atack="60" description="Embaralhe 1 {!!$daze!!} no baralho de discarte do oponente." efect="daze" />
-<x-card class="aqua" type="eye" card="clear" energy="0" none="" description="Descarte ate 2 cartas então compre a mesma quantidade. {!!$banish!!}." efect="banish" />
-<x-card class="aqua" type="eye" card="gero" energy="1" atack="60" description="Aplica {!!$fragile!!} por 4 turnos." efect="fragile" />
-<x-card class="aqua" type="eye" card="telescope" energy="0" none="" description="Pegue 1 carta de Peixe do seu baralho de compra para sua mão. {!!$banish!!}." efect="banish" />
+<x-card class="aquatic" type="eye" card="sleepless" energy="1" atack="60" description="Embaralhe 1 {!!$daze!!} no baralho de discarte do oponente." efect="daze" />
+<x-card class="aquatic" type="eye" card="clear" energy="0" none="" description="Descarte ate 2 cartas então compre a mesma quantidade. {!!$banish!!}." efect="banish" />
+<x-card class="aquatic" type="eye" card="gero" energy="1" atack="60" description="Aplica {!!$fragile!!} por 4 turnos." efect="fragile" />
+<x-card class="aquatic" type="eye" card="telescope" energy="0" none="" description="Pegue 1 carta de Peixe do seu baralho de compra para sua mão. {!!$banish!!}." efect="banish" />

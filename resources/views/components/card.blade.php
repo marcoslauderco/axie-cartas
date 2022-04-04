@@ -21,5 +21,5 @@
         </div>
         <div class="img"></div>
         <div class="skill"></div>
-        <div class="description">{!! $description !!}</div>
+        <div class="description">@isset($traducao[$description]){!! $traducao[$description] !!}@else{!! $description !!}@endisset</div>
     </div>
