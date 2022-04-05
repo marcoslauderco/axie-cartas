@@ -269,6 +269,174 @@ class TraducaoSeeder extends Seeder
             'pt' => "Se {!!\$initial!!}, esse Axie {!!\$meditates!!}."
         ]);
         DB::table('traducaos')->insert([
+            'en' => "Put 1 Plant card from your draw pile into your hand. {Banish}.",
+            'pt' => "Coloque 1 carta de Planta do seu baralho de compra para sua mão. {!!\$banish!!}."
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "Put 1 Bug card from your draw pile into your hand. {Banish}.",
+            'pt' => "Coloque 1 carta de Inseto do seu baralho de compra para sua mão. {!!\$banish!!}."
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "Shuffle 1 {Confused} into your opponents discard pile.",
+            'pt' => "Embaralhe 1 {!!\$confused!!} no baralho de descarte do oponente."
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "Heal your team and apply 5 {Healing Boost}.",
+            'pt' => "Cure seu time e aplique 5 {!!\$healingboost!!}."
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "This Axie loses 50 HP. Heal and {Cleanse} 1 debuff on other allies.",
+            'pt' => "Esse Axie perde 50 de VIDA, Cura e {!!\$cleanse!!} 1 desvantagem em outros aliados."
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "Attack 1 random enemy and apply {Death Mark} for 4 turns.",
+            'pt' => "Ataca 1 inimigo aleatório e aplica {!!\$deathmark!!} por 4 turnos."
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "Apply {Vulnerable} for 4 turns.",
+            'pt' => "Aplica {!!\$vulnerable!!} por 4 turnos."
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "Put 1 Bird card from your draw pile into your hand. {Banish}.",
+            'pt' => "Coloque 1 carta de Pássaro do seu baralho de compra para sua mão. {!!\$banish!!}."
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "Summon 1 {Mavis}.",
+            'pt' => "Invoca 1 {!!\$mavis!!}."
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "Look at the top 4 cards of your opponents draw pile. {Banish}.",
+            'pt' => "Olhe para as 4 cartas do topo do baralho de compra do seu oponente. {!!\$banish!!}."
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "Target any ally. Whenever this is drawn, heal 20 HP.",
+            'pt' => "Escolha qualquer aliado. Sempre que comprada, cura 20 de VIDA."
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "Put 1 Beast card from your discard pile into your hand. {Banish}.",
+            'pt' => "Coloque 1 carta de Besta do seu baralho de discarte para sua mão. {!!\$banish!!}."
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "Put 1 Beast card from your draw pile into your hand. {Banish}.",
+            'pt' => "Coloque 1 carta de Besta do seu baralho de compra para sua mão. {!!\$banish!!}."
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "Summon a {Little Robin}.",
+            'pt' => "Invoca 1 {!!\$littlerobin!!}"
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "Put 1 Reptile card from your draw pile into your hand. {Banish}.",
+            'pt' => "Coloque 1 carta de Réptil do seu baralho de compra para sua mão. {!!\$banish!!}."
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "Shuffle 1 {Daze} into your opponents discard pile.",
+            'pt' => "Embaralhe 1 {!!\$daze!!} no baralho de descarte do oponente."
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "Put 1 Aquatic card from your draw pile into your hand. {Banish}.",
+            'pt' => "Coloque 1 carta de Peixe do seu baralho de compra para sua mão. {!!\$banish!!}."
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "Deal 10 bonus DMG per your banished card.",
+            'pt' => "Da 10 de DANO bônus por carta banida."
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "If {Initial}, swap this card with 1 selected Card in your Banish Pile.",
+            'pt' => "Se {!!\$initial!!} troque essa carta com 1 carta selecionada do teu baralha de banimento."
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "{Scry} 4 cards. {Banish}.",
+            'pt' => "{!!\$scry!!} 4 cartas. {!!\$banish!!}."
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "This does not trigger Secrets.",
+            'pt' => "Essa carta não aciona segredos."
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "Apply {Weak} for 4 turns.",
+            'pt' => "Aplica {!!\$weak!!} por 4 turnos."
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "Deal 20 more DMG for each Bamboo card used this turn.",
+            'pt' => "Causa mais 20 de DANO por cada carta 'Bamboo' usada nesse turno."
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "Gain 75 Shield.",
+            'pt' => "Ganha 75 de escudo."
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "{Innate}. Whenever you play a card this battle, this Axie gains 10 Shield.",
+            'pt' => "{!!\$innate!!}. Quando você jogar uma carta em batalha, esse axie ganha 10 de escudo."
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "If {Initial}, deal 15 more DMG.",
+            'pt' => "Se for {!!\$initial!!}, da mais 15 de dano."
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "Gain 4 {Damage Boost} if this attack causes HP loss to target.",
+            'pt' => "Ganha 4 {!!\$damage_boost!!} se esse ataque causar dano na VIDA do alvo."
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "Target an ally. Remove {Sleep}. The next attack of the target this turn deals 50 more DMG.",
+            'pt' => "Escolha qualquer aliado. Remova {!!\$sleep!!}. O proximo ataque do escolhido nesse turno da 50 mais de DANO."
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "Apply {Taunt} to this Axie for 2 turns.",
+            'pt' => "Aplica {!!\$taunt!!} nesse axie por 2 turnos."
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "Deal 20 more DMG for each Spear card used this turn.",
+            'pt' => "Cause 20 de DANO a mais para cada carta de 'Spear' usada neste turno."
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "Cost 0 Energy in {Fury} Form.",
+            'pt' => "Custa 0 de energia na forma {!!\$fury!!}."
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "Apply {Disarmed} for 2 turns.",
+            'pt' => "Aplica {!!\$disarmed!!} por 2 turnos."
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "Gain 1 {Rage} per 1 alive Ally (including Summons).",
+            'pt' => "Ganha 1 {!!\$rage!!} por 1 aliado vivo (incluindo Invocações)"
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "{Dispel} up to 2 buffs on target.",
+            'pt' => "{!!\$dispel!!} até 2 buffs no alvo."
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "Look at the top 2 cards of your opponents draw pile.",
+            'pt' => "Olhe para as 2 cartas do topo do baralho de compras do seu oponente."
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "Attack random enemy. Apply {Taunt} for 2 turns.",
+            'pt' => "Ataque um inimigo aleatório. Aplique {!!\$taunt!!} por 2 turnos."
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "If the target has no more than 120 HP, kill it instantly.",
+            'pt' => "Se o alvo tiver menos de 120 de VIDA, mate-o instantaneamente."
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "Add 2 {Strawberry} to your hand.",
+            'pt' => "Adiciona 2 {!!\$strawberry!!} a sua mão."
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "Targeted Ally gains 20 shield for each card played this turn.",
+            'pt' => "Aliados alvos ganham 20 de escudo por cada carta jodada neste turno."
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "Deal 20 more DMG for each Trump card used this turn.",
+            'pt' => "Cause 20 a mais de DANO por cada carta 'Trump' usada neste turno."
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "Shuffle 1 {Goo} into your opponents discard pile.",
+            'pt' => "Embaralhe 1 {!!\$goo!!} no baralho de descarte do seu oponente."
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "If {Initial}, this attack targets the second-frontmost enemy.",
+            'pt' => "Se {!!\$initial!!}, este ataque atinge o segundo alvo mais a frente."
+        ]);
+        DB::table('traducaos')->insert([
             'en' => "",
             'pt' => ""
         ]);
