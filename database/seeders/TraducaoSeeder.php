@@ -437,6 +437,54 @@ class TraducaoSeeder extends Seeder
             'pt' => "Se {!!\$initial!!}, este ataque atinge o segundo alvo mais a frente."
         ]);
         DB::table('traducaos')->insert([
+            'en' => "Target any Enemy. Apply {Death Mark} for 4 turns if this Axies HP is below 50%.",
+            'pt' => "Escolha um inimigo. Aplica {!!\$deathmark!!} por 4 turnos se a vida desse axies estiver abaixo de 50%"
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "Heal HP equal to 50% of unblocked DMG.",
+            'pt' => "Cura a VIDA igual a 50% do DANO não bloqueado."
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "Target any ally. {Cleanse} 1 debuff and grant 2 {Rage}.",
+            'pt' => "Escolha qualquer alidado, {!!\$cleanse!!} 1 desvantagem e garanta 2 {!!\$rage!!}"
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "If {Initial}, apply {Sleep} for 4 turns.",
+            'pt' => "Se {!!\$initial!!}, Aplica {!!\$sleep!!} por 4 turnos."
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "Shuffle 1 {Void} into your opponents discard pile. {Banish}.",
+            'pt' => "Embaralhe 1 {!!\$void!!} no baralho de descarte do oponente. {!!\$banish!!}."
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "If {Initial}, heal 15 HP.",
+            'pt' => "Se {!!\$initial!!}, Cure 15 de VIDA."
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "Deal 2 hits to random Enemies. Gain 1 Energy if hit at least 2 Enemies.",
+            'pt' => "Da 2 acertos em inimigos aleatórios. Ganha 1 energia se acertar pelo menos 2 inimigos."
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "Deal 20 bonus DMG if this Axies HP is above 75%.",
+            'pt' => "Cause 20 de DANO extra se a vida deste Axie estiver acima de 75%."
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "Discard 1 card from your hand.",
+            'pt' => "Descarte 1 carta da sua mão."
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "If {Initial}, deal bonus DMG equal to current Shield.",
+            'pt' => "Se {!!\$initial!!}, cause um bônus de DANO igual ao escudo atual."
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "Target any Enemy. Apply {Stunned} for 2 turns if this attack causes HP loss to target.",
+            'pt' => "Escolha qualquer inimigo. Aplique {!!\$stunned!!} por 2 turnos se este ataque causar perde de VIDA no escolhido."
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "If {Initial}, this attack targets the furthest enemy.",
+            'pt' => "Se {!!\$initial!!}, este ataque atinge o inimigo mais distante."
+        ]);
+        DB::table('traducaos')->insert([
             'en' => "",
             'pt' => ""
         ]);
