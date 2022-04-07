@@ -582,7 +582,7 @@ class TraducaoSeeder extends Seeder
         ]);
         DB::table('traducaos')->insert([
             'en' => "Attack and apply 2 {Poison} to all enemies.",
-            'pt' => "Ataca e aplica 2 {!!\$poison !!} a todos os inimigos."
+            'pt' => "Ataca e aplica 2 {!!\$poison!!} a todos os inimigos."
         ]);
     }
 }
