@@ -4,22 +4,27 @@
         @isset($defense) defense @endisset
         @isset($heal) heal @endisset
         @isset($none) power-none @endisset
-        energy-{{$energy}}" style="background-image: url('{{ asset('images/' . $card . '.webp') }}');">
+        energy-{{ $energy }}"
+        style="background-image: url('{{ asset('images/' . $card . '.webp') }}');">
         <div class="topo">
             <div class="energy">
                 <p>{{ $energy }}</p>
             </div>
             @isset($atack)
-            <div class="atack">{{ $atack }}</div>
+                <div class="atack">{{ $atack }}</div>
             @endisset
             @isset($defense)
-            <div class="defense">{{ $defense }}</div>
+                <div class="defense">{{ $defense }}</div>
             @endisset
             @isset($heal)
-            <div class="heal">{{ $heal }}</div>
+                <div class="heal">{{ $heal }}</div>
             @endisset
         </div>
         <div class="img"></div>
         <div class="skill"></div>
-        <div class="description">@isset($traducao[$description]){!! $traducao[$description] !!}@else{!! $description !!}@endisset</div>
+        <div class="description">
+            @isset($traducao[strtolower($description)])
+                {!! $traducao[strtolower($description)] !!}@else{!! $description !!}
+            @endisset
+        </div>
     </div>

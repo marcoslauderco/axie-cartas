@@ -485,8 +485,104 @@ class TraducaoSeeder extends Seeder
             'pt' => "Se {!!\$initial!!}, este ataque atinge o inimigo mais distante."
         ]);
         DB::table('traducaos')->insert([
-            'en' => "",
-            'pt' => ""
+            'en' => "Apply {Taunt} to this Axie for 4 turns.",
+            'pt' => "Aplica {!!\$taunt!!} nesse axie por 4 turnos."
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "Gain 1 Energy if this Attack causes HP loss to target.",
+            'pt' => "Ganha 1 de energia se esse ataque causar dano na VIDA do alvo."
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "This attack targets the frontmost non-summoned enemy.",
+            'pt' => "Esse ataque mira no Inimigo não invocado mais a frente."
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "Heal any ally. Gain 1 Energy. {Banish}",
+            'pt' => "Cura qualquer aliado. Ganha 1 energia. {!!\$banish!!}."
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "Randomly deal 4 hits. Your team gains 1 {Feather} per enemy hit.",
+            'pt' => "Cause 4 acertos aleatoriamente. Seu time ganha 1 {!!\$feather!!} por inimigo atingido."
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "Target any ally. Next turn, after the target is attacked, apply {Weak} to the Attacker for 4 turns.",
+            'pt' => "Escolha qualquer aliado. No próximo turno, depois do escolhido ser atacado, apica {!!\$weak!!} no atacante por 4 turnos."
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "Attack all enemies. Deal 2 bonus DMG per {Poison} stack on Enemy.",
+            'pt' => "Ataca todos os inimigos. Da 2 bônus de DANO por {!!\$poison!!} aplicado no iminigo."
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "{Innate}. Attack all enemies. Apply {Vulnerable} for 4 turns.",
+            'pt' => "{!!\$innate!!}. Ataca todos os inimigos. Aplica {!!\$vulnerable!!} por 4 turnos."
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "Apply {Hex} for 4 turns",
+            'pt' => "Aplica {!!\$hex!!} por 4 turnos."
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "Target any ally. Next turn, after the target is attacked, apply {Fear} to the Attacker for 4 turns.",
+            'pt' => "Escolha qualquer aliado. No próximo turno, depois do escolhido ser atacado, aplica {!!\$fear!!} no atacante por 4 turnos."
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "Shuffle 3 {Burn}s into your opponents discard pile.",
+            'pt' => "Embaralhe 3 {!!\$burns!!} no baralho de descarte do oponente."
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "Deal 15 bonus DMG per Aquatic Ally.",
+            'pt' => "Da 15 de Bônus de DANO por Aliado do tipo Peixe."
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "Draw 1 Card. Gain 1 Energy. {Banish}.",
+            'pt' => "Compre 1 carta. Ganha 1 de energia. {!!\$banish!!}"
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "This Axie loses 35 HP.",
+            'pt' => "Este Axie perde 35 de VIDA."
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "Gain {Stealth} if there is at least 1 living Ally.",
+            'pt' => "Ganha {!!\$stealth!!} se houver pelo menos 1 aliado vivo."
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "Target any ally. Next turn, after the target is attacked, it gains 2 {Damage Boost}",
+            'pt' => "Escolha um aliado. No próximo turno, após o escolhido ser atacado, ele ganha 2 {!!\$damage_boost!!}"
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "Attack all enemies. Apply {Weak} for 2 turns.",
+            'pt' => "Ataque todos os inimigos. Aplica {!!\$weak!!} por 2 turnos."
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "{Steal} 40 HP. Gain 1 Energy if this Axies HP is full.",
+            'pt' => "{!!\$steal!!} 40 de VIDA. Ganhe 1 de energia se a VIDA deste Axie estiver cheia."
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "Your team gains 3 {Rage} if this Axies HP is below 50%.",
+            'pt' => "Seu time ganha 3 {!!\$rage!!} se a Vida deste Axie estiver abaixo de 50%."
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "Target any ally. Negate the next HP loss against the target, up to 90 HP.",
+            'pt' => "Escolhar qualquer aliado. Nega a próxima perda de VIDA contra o escolhido, até 90 de VIDA."
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "Deal 20 more DMG if this is the only card in your hand.",
+            'pt' => "Causa 20 mais de DANO se essa for a única carta em sua mão."
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "Deal 50% more DMG against debuffed enemies.",
+            'pt' => "Cause 50% mais DANO contra inimigos com penalidades."
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "{Retain}. This card gains 15 bonus DMG per turn if Retained. Max: 4 turns.",
+            'pt' => "{!!\$retain!!}. Essa carta ganha 15 de bônnus de DANO para cada turno se retido. Máximo 4 turnos."
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "This Axie loses 50 HP. Takes 30% less DMG for 4 turns.",
+            'pt' => "Este axie perde 50 de VIDA. Recebe 30% menos DANO por 4 turnos."
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "Attack and apply 2 {Poison} to all enemies.",
+            'pt' => "Ataca e aplica 2 {!!\$poison !!} a todos os inimigos."
         ]);
     }
 }

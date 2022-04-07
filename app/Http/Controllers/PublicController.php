@@ -65,7 +65,7 @@ class PublicController extends Controller
         $find       = array_keys($efeitos);
         $replace    = array_values($efeitos);
         foreach ($traducao_reg as $trad) {
-            $traducao[$trad->en] = str_ireplace($find, $replace, $trad->pt);;
+            $traducao[strtolower($trad->en)] = str_ireplace($find, $replace, $trad->pt);;
         }
         return view('cards', compact('cartas', 'traducao'));
     }
