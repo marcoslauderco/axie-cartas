@@ -59,7 +59,7 @@ class PublicController extends Controller
         $efeitos['{!!$littlerobin!!}'] = "<span class='debuff tooltip'>Little Robin<span class='tooltiptext'>Pequeno Robin: Pássaro | 18 de VIDA | companheiros de equipe dão 16 a mais de DANO. Perde 8 de Vida quando seu turno termina.</span></span>";
 
 
-        $cartas = Carta::orderBy('card')->get();
+        $cartas = Carta::orderBy('cardName')->get();
         $traducao_reg = Traducao::all();
         $traducao = array();
         $find       = array_keys($efeitos);

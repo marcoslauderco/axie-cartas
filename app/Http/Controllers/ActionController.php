@@ -13,7 +13,7 @@ class ActionController extends Controller
     {
         Artisan::call('migrate');
 
-        $response = Http::get('https://api.axietech.info/cards/v3-lite');
+        $response = Http::get('https://api.axietech.info/cards/v3');
 
         $cards = $response->collect('cards');
 
@@ -27,6 +27,14 @@ class ActionController extends Controller
                     'card' => $card['partId'],
                     'energy' => $card['cardEnergy'],
                     'description' => ($card['cardText'] ? str_ireplace(["[", "]", "<", ">", "'"], ["{", "}", "{", "}", ""], $card['cardText']) : " "),
+                    'partName' => $card['partName'],
+                    'cardName' => $card['cardName'],
+                    'cardType' => $card['cardType'],
+                    'cardDamage' => $card['cardDamage'],
+                    'cardShield' => $card['cardShield'],
+                    'cardHeal' => $card['cardHeal'],
+                    'tags' => $card['tags'],
+                    'cardImage' => $card['cardImage'],
                 ]);
                 var_dump($card);
                 $carta->save();

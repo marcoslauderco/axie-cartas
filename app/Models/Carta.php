@@ -21,6 +21,14 @@ class Carta extends Model
         'card',
         'energy',
         'description',
+        'partName',
+        'cardName',
+        'cardType',
+        'cardDamage',
+        'cardShield',
+        'cardHeal',
+        'tags',
+        'cardImage',
     ];
 
     public function prunable()
@@ -28,27 +36,10 @@ class Carta extends Model
         return static::where('created_at', '<=', now());
     }
 
-    private function cardMutator($value,  $attributes)
-    {
-        $retorno = str_replace($attributes['type'] . "-", "", $value);
-        if (
-            $retorno == "leaf-bug" ||
-            $retorno == 'nut-cracker' ||
-            $retorno == 'kotaro' ||
-            $retorno == 'little-owl' ||
-            $retorno == 'puppy' ||
-            $retorno == 'peace-maker' ||
-            $retorno == 'anemone'
-        ) {
-            $retorno = $retorno . "-" . $attributes['type'];
-        }
-        return $retorno;
-    }
-
-    public function card(): Attribute
+    public function cardImage(): Attribute
     {
         return Attribute::make(
-            get: fn ($value,  $attributes) => self::cardMutator($value, $attributes),
+            get: fn ($value) => str_replace(".png", ".webp", $value),
         );
     }
 

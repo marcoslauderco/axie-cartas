@@ -1,38 +1,5 @@
 @import "variables";
 
-@mixin action($card-width, $color) {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: $color;
-    width: calc($card-width * 29 / 100);
-    height: calc($card-width * 15 / 100);
-    margin-top: calc($card-width * 0.09);
-    position: relative;
-    left: calc($card-width * 0.03 * -1);
-    border-bottom-right-radius: 40%;
-    color: $branco;
-    font-size: calc($card-width * 0.095);
-    font-family: "Roboto", serif;
-    font-weight: 900;
-    &:before {
-        content: " ";
-        background-color: #ccb8a4;
-        height: calc($card-width * 15 / 100);
-        border-right: calc($card-width * 0.028) solid #ccb8a4;
-        border-top-right-radius: 100%;
-        border-bottom-right-radius: 100%;
-        left: -1px;
-    }
-    &:after {
-        content: " ";
-        background-color: transparent;
-        height: calc($card-width * 13 / 100);
-        border-right: calc($card-width * 0.06) solid $color;
-        border-bottom-right-radius: 600%;
-    }
-}
-
 @mixin card($card-width) {
     .filter {
         .select {
@@ -45,7 +12,35 @@
         background-size: cover;
         display: flex;
         flex-direction: column;
-        background-image: url("../img/frame.png");
+        margin-bottom: 15px;
+        // background-image: url("../img/frame.png");
+        * {
+            z-index: 5;
+        }
+        &::before{
+            content: "";
+            background-image: url("../img/frame.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: $card-width;
+            height: calc(1350 * $card-width / 900);
+            position: absolute;
+            float: left;
+            z-index: 3;
+        }
+
+        &::after{
+            content: "";
+            background-color: darkcyan;
+            width: calc($card-width * 0.82);
+            height: calc($card-width * 1.34);
+            position: absolute;
+            float: left;
+            z-index: 1;
+            margin-left: calc($card-width * 0.14);
+            margin-top: calc($card-width * 0.14);
+        }
 
         .topo {
             display: flex;
@@ -55,16 +50,22 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                width: calc($card-width * 0.3);
-                height: calc($card-width * 0.3);
+                width: calc($card-width * 0.25);
+                height: calc($card-width * 0.25);
+                margin-top: calc($card-width * 0.02);
+                margin-left: calc($card-width * 0.02);
+                margin-right: calc($card-width * 0.02);
                 border-radius: 50%;
                 color: $branco;
                 font-size: calc($card-width * 12 / 100);
                 font-family: "Ultra", serif;
                 font-weight: 400;
+                background-image: url('../img/energy-icon.png');
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
 
                 p {
-                    background-color: #0030db;
                     border-radius: 50%;
                     width: calc($card-width * 0.15);
                     height: calc($card-width * 0.15);
@@ -72,40 +73,88 @@
                 }
             }
             .atack {
-                @include action($card-width, #bc061b);
+                background-image: url("../img/damage.png");
             }
             .defense {
-                @include action($card-width, #0054a6);
+                background-image: url("../img/shield.png");
             }
             .heal {
-                @include action($card-width, #008c60);
+                background-image: url("../img/heal.png");
+            }
+            .atack, .defense, .heal {
+                align-items: center;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                text-align: center;
+                width: calc($card-width * 0.26);
+                height: calc($card-width * 15 / 100);
+                margin-top: calc($card-width * 0.09);
+                position: relative;
+                color: $branco;
+                font-size: calc($card-width * 0.095);
+                font-family: "Roboto", serif;
+                font-weight: 900;
+
             }
         }
         .img {
-            width: $card-width;
-            min-height: calc($card-width * 50 / 100);
+            display: flex;
+            width: calc($card-width * 0.83);
+            height: calc($card-width * 0.83);
+            background-size: cover;
+            position: absolute;
+            float: left;
+            z-index: 2;
+            margin-left: calc($card-width * 0.13);
+            margin-top: calc($card-width * 0.15);
+            &::before{
+                content: "";
+                width: calc($card-width * 0.83);
+                height: calc($card-width * 0.83);
+                // opacity: 1;
+            }
         }
 
         .skill {
             width: calc($card-width * 85 / 100);
-            height: calc($card-width * 27 / 100);
-            // margin-top: calc($card-width * 72.5 / 100);
+            height: calc($card-width * 0.2);
             margin-left: calc($card-width * 10 / 100);
+            display: flex;
+            margin-top: calc($card-width * 0.58);
+            color: $branco;
+            font-family: "Roboto", sans-serif;
+            font-weight: 600;
+            font-size: calc($card-width * 0.07);
+            &::before{
+                content: "";
+                width: calc($card-width * 0.25);
+                height: calc($card-width * 0.25);
+                background-position: top center;
+                background-repeat: no-repeat;
+                background-size: 80%;
+                margin-right: calc($card-width * 0.03);
+            }
         }
 
         .description {
             width: calc($card-width * 70 / 100);
-            height: calc($card-width * 20 / 100);
-            margin-top: calc($card-width * 2.5 / 100);
+            height: calc($card-width * 0.37);
+            margin-top: calc($card-width * 0.015);
             margin-left: calc($card-width * 15 / 100);
             border-bottom-left-radius: calc($card-width * 5 / 100);
             border-bottom-right-radius: calc($card-width * 5 / 100);
             color: $branco;
-            padding: calc($card-width * 5 / 100);
+            padding-top: calc($card-width * 0.05);
+            padding-left: calc($card-width * 0.05);
+            padding-right: calc($card-width * 0.05);
             font-size: calc($card-width * 5 / 100);
             text-align: center;
             font-family: "Roboto", sans-serif;
             font-weight: 300;
+            background-size: calc($card-width * 0.08);
+            background-repeat: no-repeat;
+            background-position: bottom center;
 
             .debuff {
                 font-weight: 500;
@@ -185,23 +234,115 @@
 
 @include card(43vw);
 
+.aquatic{
+    &::after {
+        background: linear-gradient(360deg, rgb(18, 56, 77) 0%, rgb(25, 75, 102) 100%);
+    }
+    .img::before{
+        background-image: linear-gradient(transparent 70%, rgb(18, 56, 77));
+    }
+}
+.plant{
+    &::after {
+        background: linear-gradient(360deg, rgba(52, 75, 33, 255) 0%, rgba(66, 95, 43, 255) 100%);
+    }
+    .img::before{
+        background-image: linear-gradient(transparent 70%, rgba(52, 75, 33, 255));
+    }
+}
+.bug{
+    &::after {
+        background: linear-gradient(360deg, rgb(80, 21, 21) 0%, rgba(100, 42, 42, 255) 100%);
+    }
+    .img::before{
+        background-image: linear-gradient(transparent 70%, rgb(80, 21, 21));
+    }
+}
+.beast{
+    &::after {
+        background: linear-gradient(360deg, rgba(86, 47, 18, 255) 0%, rgba(112, 62, 27, 255) 100%);
+    }
+    .img::before{
+        background-image: linear-gradient(transparent 70%, rgba(86, 47, 18, 255));
+    }
+}
+.bird{
+    &::after {
+        background: linear-gradient(360deg, rgba(75, 32, 46, 254) 0%, rgba(102, 42, 61, 255) 100%);
+    }
+    .img::before{
+        background-image: linear-gradient(transparent 70%, rgba(75, 32, 46, 254));
+    }
+}
+.reptile{
+    &::after {
+        background: linear-gradient(360deg, rgba(67, 33, 49, 255) 0%, rgba(85, 44, 62, 255) 100%);
+    }
+    .img::before{
+        background-image: linear-gradient(transparent 70%, rgba(67, 33, 49, 255));
+    }
+}
+.dawn{
+    &::after {
+        background: linear-gradient(360deg, #251F38 0%, #3D305A 100%);
+    }
+    .img::before{
+        background-image: linear-gradient(transparent 70%, #251F38);
+    }
+}
+.mech{
+    &::after {
+        background: linear-gradient(360deg, #2A2C2D 0%, #3A3A3D 100%);
+    }
+    .img::before{
+        background-image: linear-gradient(transparent 70%, #2A2C2D);
+    }
+}
 .aquatic .description {
-    background: linear-gradient(360deg, rgb(18, 56, 77) 0%, rgb(25, 75, 102) 100%);
+    background-image: url('../img/aquatic.png');
 }
 .plant .description {
-    background: linear-gradient(360deg, rgba(52, 75, 33, 255) 0%, rgba(66, 95, 43, 255) 100%);
+    background-image: url('../img/plant.png');
 }
 .bug .description {
-    background: linear-gradient(360deg, rgb(80, 21, 21) 0%, rgba(100, 42, 42, 255) 100%);
+    background-image: url('../img/bug.png');
 }
 .beast .description {
-    background: linear-gradient(360deg, rgba(86, 47, 18, 255) 0%, rgba(112, 62, 27, 255) 100%);
+    background-image: url('../img/beast.png');
 }
 .bird .description {
-    background: linear-gradient(360deg, rgba(75, 32, 46, 254) 0%, rgba(102, 42, 61, 255) 100%);
+    background-image: url('../img/bird.png');
 }
 .reptile .description {
-    background: linear-gradient(360deg, rgba(67, 33, 49, 255) 0%, rgba(85, 44, 62, 255) 100%);
+    background-image: url('../img/reptile.png');
+}
+.mech .description {
+    background-image: url('../img/mech.png');
+}
+.dusk .description {
+    background-image: url('../img/dusk.png');
+}
+.dawn .description {
+    background-image: url('../img/dawn.png');
+}
+
+.back .skill::before{
+    background-image: url('../img/back.png');
+}
+.mouth .skill::before{
+    background-image: url('../img/mouth.png');
+}
+.tail .skill::before{
+    background-image: url('../img/tail.png');
+}
+.horn .skill::before{
+    background-image: url('../img/horn.png');
+}
+.eyes .skill::before{
+    background-image: url('../img/eyes.png');
+}
+.ears .skill::before{
+    background-image: url('../img/ears.png');
 }
 
 // Small devices (landscape phones, 576px and up)

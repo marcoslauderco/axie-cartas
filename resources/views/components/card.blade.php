@@ -1,27 +1,27 @@
-    <div class="card {{ $class }} {{ $type }} {{ $card }}
-        @isset($efect) {{ $efect }} @endisset
-        @isset($atack) atack @endisset
-        @isset($defense) defense @endisset
-        @isset($heal) heal @endisset
-        @isset($none) power-none @endisset
-        energy-{{ $energy }}"
-        style="background-image: url('{{ asset('images/' . $card . '.webp') }}');">
+    <div
+        class="card {{ $class }} {{ $type }} {{ $card }}
+        @if ($efect) {{ str_replace(',', ' ', $efect) }} @endif
+        @if ($atack > 0) atack @endif
+        @if ($defense > 0) defense @endif
+        @if ($heal > 0) heal @endif
+        @if ($atack == 0 && $defense == 0 && $heal == 0) power-none @endif
+        energy-{{ $energy }}">
         <div class="topo">
             <div class="energy">
                 <p>{{ $energy }}</p>
             </div>
-            @isset($atack)
+            @if ($atack > 0)
                 <div class="atack">{{ $atack }}</div>
-            @endisset
-            @isset($defense)
+            @endif
+            @if ($defense > 0)
                 <div class="defense">{{ $defense }}</div>
-            @endisset
-            @isset($heal)
+            @endif
+            @if ($heal > 0)
                 <div class="heal">{{ $heal }}</div>
-            @endisset
+            @endif
         </div>
-        <div class="img"></div>
-        <div class="skill"></div>
+        <div class="img" style="background-image: url('{{ asset('images/' . $img) }}');"></div>
+        <div class="skill">{{ $name }}</div>
         <div class="description">
             @isset($traducao[strtolower($description)])
                 {!! $traducao[strtolower($description)] !!}@else{!! $description !!}
