@@ -176,3 +176,8 @@ mix.ImageWebp({
     from: 'resources/cards/Tail Cards Art/Reptile',
     to: 'public/images',
 });
+//outras
+mix.ImageWebp({
+    from: 'resources/cards/Iniciais',
+    to: 'public/images',
+});
