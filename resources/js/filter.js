@@ -1,10 +1,10 @@
 function filter(campo) {
     let v = $("#sel-" + campo).val();
     if (v) {
-        $(".card").addClass('hide-by-' + campo);
+        $(".cardshow").addClass('hide-by-' + campo);
         $("." + v).removeClass('hide-by-' + campo);
     } else {
-        $(".card").removeClass('hide-by-' + campo);
+        $(".cardshow").removeClass('hide-by-' + campo);
     }
 }
 $("#sel-class").change(function () {

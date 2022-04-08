@@ -6,7 +6,7 @@
             width: $card-width * 2;
         }
     }
-    .card {
+    .cardshow {
         width: $card-width;
         height: calc(1350 * $card-width / 900);
         background-size: cover;
@@ -116,24 +116,83 @@
             }
         }
 
-        .skill {
+        .info {
             width: calc($card-width * 85 / 100);
             height: calc($card-width * 0.2);
             margin-left: calc($card-width * 10 / 100);
-            display: flex;
+            display: grid;
             margin-top: calc($card-width * 0.58);
             color: $branco;
             font-family: "Roboto", sans-serif;
             font-weight: 600;
-            font-size: calc($card-width * 0.07);
+            font-size: calc($card-width * 0.06);
+            column-gap: 0;
+            row-gap: 0;
             &::before{
                 content: "";
+                grid-row: 1/3;
+                grid-column: 1;
                 width: calc($card-width * 0.25);
                 height: calc($card-width * 0.25);
                 background-position: top center;
                 background-repeat: no-repeat;
                 background-size: 80%;
-                margin-right: calc($card-width * 0.03);
+            }
+            .name {
+                width: calc($card-width * 0.5);
+                height: 45%;
+                grid-column: 2;
+                grid-row: 1;
+            }
+            .efect {
+                width: calc($card-width * 0.5);
+                height: 45%;
+                grid-column: 2;
+                grid-row: 2;
+                font-size: 0px;
+                display: flex;
+                .skill {
+                    background-image: url("../img/skill.png");
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    width: calc($card-width * 0.22);
+                    height: calc($card-width * 0.1);
+                }
+                .attack {
+                    background-image: url("../img/attack.png");
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    width: calc($card-width * 0.26);
+                    height: calc($card-width * 0.1);
+                }
+                .banish {
+                    background-image: url("../img/banish.png");
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    width: calc($card-width * 0.26);
+                    height: calc($card-width * 0.1);
+                }
+                .power {
+                    background-image: url("../img/power.png");
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    width: calc($card-width * 0.24);
+                    height: calc($card-width * 0.1);
+                }
+                .secret {
+                    background-image: url("../img/secret.png");
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    width: calc($card-width * 0.27);
+                    height: calc($card-width * 0.1);
+                }
+                .retain_effect {
+                    background-image: url("../img/retain_effect.png");
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    width: calc($card-width * 0.26);
+                    height: calc($card-width * 0.1);
+                }
             }
         }
 
@@ -326,22 +385,22 @@
     background-image: url('../img/dawn.png');
 }
 
-.back .skill::before{
+.back .info::before{
     background-image: url('../img/back.png');
 }
-.mouth .skill::before{
+.mouth .info::before{
     background-image: url('../img/mouth.png');
 }
-.tail .skill::before{
+.tail .info::before{
     background-image: url('../img/tail.png');
 }
-.horn .skill::before{
+.horn .info::before{
     background-image: url('../img/horn.png');
 }
-.eyes .skill::before{
+.eyes .info::before{
     background-image: url('../img/eyes.png');
 }
-.ears .skill::before{
+.ears .info::before{
     background-image: url('../img/ears.png');
 }
 

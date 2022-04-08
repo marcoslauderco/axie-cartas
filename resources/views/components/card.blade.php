@@ -1,5 +1,5 @@
     <div
-        class="card {{ $class }} {{ $type }} {{ $card }}
+        class="cardshow {{ $class }} {{ $type }} {{ $card }}
         @if ($efect) {{ str_replace(',', ' ', $efect) }} @endif
         @if ($atack > 0) atack @endif
         @if ($defense > 0) defense @endif
@@ -21,7 +21,14 @@
             @endif
         </div>
         <div class="img" style="background-image: url('{{ asset('images/' . $img) }}');"></div>
-        <div class="skill">{{ $name }}</div>
+        <div class="info">
+            <div class="name">{{ $name }}</div>
+            <div class="efect">
+                @foreach (explode(',', $efect) as $ef)
+                    <span class="{{ $ef }}">{{ $ef }}</span>
+                @endforeach
+            </div>
+        </div>
         <div class="description">
             @isset($traducao[strtolower($description)])
                 {!! $traducao[strtolower($description)] !!}@else{!! $description !!}
