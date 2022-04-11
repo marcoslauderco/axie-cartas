@@ -39,10 +39,14 @@
 
     </select> --}}
         <select id="sel-power" class="select">
-            <option value="">- Ataque, Defesa, Cura, Nenhum -</option>
+            <option value="">- Marcação -</option>
             <option value="atack">Ataque</option>
             <option value="defense">Desesa</option>
             <option value="heal">Cura</option>
+            <option value="skill">habilidade - Skill</option>
+            <option value="power">Poder - Power</option>
+            <option value="secret">Segredo - Secret</option>
+            <option value="banish">Banir - Banish</option>
             <option value="power-none">Nenhum</option>
 
         </select>
