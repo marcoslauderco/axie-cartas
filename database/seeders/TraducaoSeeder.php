@@ -186,7 +186,7 @@ class TraducaoSeeder extends Seeder
         ]);
         DB::table('traducaos')->insert([
             'en' => "{Innate}. Select and add 1 copy of this Axies Skill Card to your hand. {Banish}.",
-            'pt' => "{!!\$innate!}}. Selecione e adicione uma cópia de uma carta de 'Skill' desse axie para sua mão. {!!\$banish!!}"
+            'pt' => "{!!\$innate!!}. Selecione e adicione uma cópia de uma carta de 'Skill' desse axie para sua mão. {!!\$banish!!}"
         ]);
         DB::table('traducaos')->insert([
             'en' => "{Scry} 2 cards. Gain 1 Energy if you discard a skill card upon scrying.",
@@ -583,6 +583,82 @@ class TraducaoSeeder extends Seeder
         DB::table('traducaos')->insert([
             'en' => "Attack and apply 2 {Poison} to all enemies.",
             'pt' => "Ataca e aplica 2 {!!\$poison!!} a todos os inimigos."
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "Attacks deal 33 bonus DMG if HP is above 66%",
+            'pt' => "Ataques causam 33 de bônus de DANO se a VIDA estiver abaixo de 66%"
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "Gain 2 {Rage}.",
+            'pt' => "Ganha 2 {!!\$rage!!}"
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "Gain 4 {Rage}.",
+            'pt' => "Ganha 4 {!!\$rage!!}"
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "If {Initial}, draw 1 Skill/Secret Card",
+            'pt' => "Se {!!\$initial!!}, compra 1 carta 'Skill/Secret'"
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "Target the furthest enemy.",
+            'pt' => "Mire no inimigo mais longe."
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "{Retain}. Gain 1 {Rage}. If Retained, +1 {Rage} when played (cap:3 rounds).",
+            'pt' => "{!!\$retain!!}. Ganha 1 {!!\$rage!!}. Se retido, +1 {!!\$rage!!} quando jogada (cap:3 rounds)."
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "{Innate}.",
+            'pt' => "{!!\$innate!!}."
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "{Banish}.",
+            'pt' => "{!!\$banish!!}."
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "If {Initial}, restore 15 HP.",
+            'pt' => "Se {!!\$initial!!}, recupere 15 de VIDA."
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "{Ethereal}.",
+            'pt' => "{!!\$ethereal!!}"
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "{Innate}. Add 2 {Mandarine}s to your hand.",
+            'pt' => "{!!\$innate!!}. Adiciona 2 {!!\$mandarine!!}s para sua mão."
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "{Retain}. Pick a card. Next turn, add 2 copies of it to your hand. {Banish}.",
+            'pt' => "{!!\$retain!!}. Peque uma carta. No próximo turno, adicionar 2 copias dela para sua mão. {!!\$banish!!}"
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "Gain 1 Energy. {Banish}.",
+            'pt' => "Ganha 1 energia. {!!\$banish!!}"
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "Target any Enemy.",
+            'pt' => "Escolha qualquer inimigo."
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "{Retain}. Randomly deal X hits.",
+            'pt' => "{!!\$retain!!}. Dê X ataques aleatórios."
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "{Steal} 40 HP. Gain 1 Energy if this Axies HP is full. {Banish}.",
+            'pt' => "{!!\$steal!!} 40 de VIDA. Ganha 1 energia se a VIDA desse axie estiver cheia. {!!\$banish!!}."
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "Heal all allies.",
+            'pt' => "Cura todos os aliados."
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "Gain 40 Shield.",
+            'pt' => "Ganha 40 de escudo."
+        ]);
+        DB::table('traducaos')->insert([
+            'en' => "Gain 40 Shield. Apply {Doubt} for 4 turns.",
+            'pt' => "Ganha 40 de escudo. Aplica {!!\$doubt!!} por 4 turnos."
         ]);
     }
 }
