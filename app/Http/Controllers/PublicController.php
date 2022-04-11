@@ -57,8 +57,8 @@ class PublicController extends Controller
         $efeitos['{!!$healingboost!!}'] = "<span class='debuff tooltip'>Healing Boost<span class='tooltiptext'>Aumento de cura: Aumenta o efeito de cartas de cura nessa unidade em 1 de VIDA por pilha</span></span>";
         $efeitos['{!!$mavis!!}'] = "<span class='debuff tooltip'>Mavis<span class='tooltiptext'>Mavis: Pássaro | 18 de Vida | Quando seu turno começa (antes de comprar cartas). MAVIS reduz 1 de energia de uma carta de ataque aleatória. Carta de Ataque perde 8 de VIDA quando seu turno termina.</span></span>";
         $efeitos['{!!$littlerobin!!}'] = "<span class='debuff tooltip'>Little Robin<span class='tooltiptext'>Pequeno Robin: Pássaro | 18 de VIDA | companheiros de equipe dão 16 a mais de DANO. Perde 8 de Vida quando seu turno termina.</span></span>";
-        $efeitos['{!!$ethereal!!}'] = "<span class='debuff tooltip'>Etérea<span class='tooltiptext'></span></span>";
-        $efeitos['{!!$mandarine!!}'] = "<span class='debuff tooltip'>Mandarine<span class='tooltiptext'></span></span>";
+        $efeitos['{!!$ethereal!!}'] = "<span class='debuff tooltip'>Etérea<span class='tooltiptext'>Quando seu truno termina, Se essa cartas ainda estiver na sua mão, ela é banida. Cartas Banidas são removidas do seu baralho até o fim da batalha.</span></span>";
+        $efeitos['{!!$mandarine!!}'] = "<span class='debuff tooltip'>Mandarine<span class='tooltiptext'>[CARTA]</span></span>";
 
 
         $cartas = Carta::orderBy('cardName')->get();
