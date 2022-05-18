@@ -14,7 +14,7 @@ class ActionController extends Controller
         Artisan::call('model:prune', array('--model' => Carta::class));
         Artisan::call('migrate');
 
-        $response = Http::get('https://api.axietech.info/cards/v3');
+        $response = Http::get('https://tribally.xyz/cards/v3');
 
         $cards = $response->collect('cards');
 
